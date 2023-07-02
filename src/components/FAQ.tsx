@@ -1,5 +1,7 @@
 import { Disclosure } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
+import LeftOrangeGradient from './LeftOrangeGradient';
+import RightPinkGradient from './RightPinkGradient';
 
 const faqs = [
 	{
@@ -16,18 +18,17 @@ const faqs = [
 	},
 	{
 		question:
-			'Hoe lang duurt het gemiddeld om een website te laten bouwen in de regio Arnhem, Nijmegen en Elst?',
-		answer: 'De tijd die nodig is om een website te laten bouwen in de regio Arnhem, Nijmegen en Elst is afhankelijk van verschillende factoren, zoals de omvang en complexiteit van de website, de gewenste functionaliteiten en het beschikbaar stellen van content. Over het algemeen varieert de duur van enkele weken tot enkele maanden. Een grondige planning en goede communicatie tussen jou en het webontwikkelingsteam kunnen helpen om het proces efficiënt en binnen de gestelde tijdlijnen te laten verlopen.',
+			'Hoe lang duurt het gemiddeld om een website te laten bouwen?',
+		answer: 'De tijd die nodig is om een website te laten bouwen is afhankelijk van verschillende factoren, zoals de omvang en complexiteit van de website, de gewenste functionaliteiten en het beschikbaar stellen van content. Over het algemeen varieert de duur van enkele weken tot enkele maanden. Een grondige planning en goede communicatie tussen jou en het webontwikkelingsteam kunnen helpen om het proces efficiënt en binnen de gestelde tijdlijnen te laten verlopen. </br></br> Er zijn ook mogelijkheden om een website met spoed te laten maken, waarbij de website binnen enkele dagen wordt opgeleverd. Dit is echter alleen mogelijk voor eenvoudige websites met beperkte functionaliteiten en content.',
+	},
+	{
+		question: 'Wat zijn de kosten voor het laten bouwen van een website?',
+		answer: 'De kosten voor het laten bouwen van een website kunnen variëren afhankelijk van verschillende factoren, zoals de functionaliteiten, het ontwerp, de complexiteit en de ondersteuning die je nodig hebt. </br></br> Neem gerust <a href="/contact">contact</a> op om een offerte op maat te ontvangen op basis van jouw specifieke vereisten.',
 	},
 	{
 		question:
-			'Wat zijn de kosten voor het laten bouwen van een website in de regio Arnhem, Nijmegen en Elst?',
-		answer: 'De kosten voor het laten bouwen van een website in de regio Arnhem, Nijmegen en Elst kunnen variëren afhankelijk van verschillende factoren, zoals de functionaliteiten, het ontwerp, de complexiteit en de ondersteuning die je nodig hebt. Het is raadzaam om contact op te nemen met een professioneel webontwikkelingsbedrijf in de regio om een offerte op maat te ontvangen op basis van jouw specifieke vereisten.',
-	},
-	{
-		question:
-			'Hoe kan ik mijn website laten optimaliseren voor zoekmachines in de regio Arnhem, Nijmegen en Elst?',
-		answer: 'Om je website te optimaliseren voor zoekmachines in de regio Arnhem, Nijmegen en Elst, kunnen de volgende stappen worden genomen:',
+			'Hoe kan ik mijn website laten optimaliseren voor zoekresultatem in de regio Arnhem, Nijmegen en Elst?',
+		answer: 'Om je website te optimaliseren voor zoekresultatem in de regio Arnhem, Nijmegen en Elst, neem ik de volgende stappen:',
 		subpoints: [
 			'Trefwoordenonderzoek - Identificeer relevante zoekwoorden die vaak worden gebruikt door potentiële klanten in de regio.',
 			'Inhoudsoptimalisatie - Optimaliseer de inhoud van je website met de gekozen zoekwoorden, zorg voor kwalitatieve en relevante content.',
@@ -37,13 +38,12 @@ const faqs = [
 		],
 	},
 	{
-		question:
-			'Welke ondersteuning bieden jullie na het bouwen van een website in de regio Arnhem, Nijmegen en Elst?',
-		answer: 'Na het bouwen van een website in de regio Arnhem, Nijmegen en Elst bieden wij ondersteuning op verschillende gebieden:',
+		question: 'Welke ondersteuning bied je na het bouwen van een website?',
+		answer: 'Na het bouwen van een website bied ik ondersteuning op verschillende gebieden:',
 		subpoints: [
 			'Onderhoud - Wij zorgen voor regelmatig onderhoud en updates om ervoor te zorgen dat je website optimaal blijft werken.',
 			'Beveiliging - Wij implementeren beveiligingsmaatregelen om je website te beschermen tegen mogelijke bedreigingen en aanvallen.',
-			'Technische ondersteuning - Ons team staat klaar om technische problemen op te lossen en je te helpen bij vragen of uitdagingen met betrekking tot je website.',
+			'Technische ondersteuning - Ik sta klaar om technische problemen op te lossen en je te helpen bij vragen of uitdagingen met betrekking tot je website.',
 			'Contentupdates - Indien gewenst, kunnen wij je ondersteunen bij het bijwerken en toevoegen van nieuwe content op je website.',
 			'Analyse en rapportage - Wij kunnen je voorzien van periodieke analyse en rapportage om inzicht te krijgen in de prestaties van je website en aanbevelingen te doen voor verdere optimalisatie.',
 		],
@@ -51,8 +51,9 @@ const faqs = [
 ];
 export default function FAQ() {
 	return (
-		<div className="">
-			<div className="container py-12 sm:py-20 lg:py-24">
+		<div className="relative">
+			<LeftOrangeGradient />
+			<div className="container relative z-10 py-12 sm:py-20 lg:py-24">
 				<div className="mx-auto max-w-4xl divide-y divide-white/10">
 					<h2 className="text-center">Veelgestelde vragen</h2>
 					<dl className="mt-10 space-y-6 divide-y divide-white/10">
@@ -89,7 +90,21 @@ export default function FAQ() {
 											className="mt-2 pr-12"
 										>
 											<p className="text-base leading-7 text-gray-300">
-												{faq.answer}
+												<span
+													className="my-4 block"
+													dangerouslySetInnerHTML={{
+														__html: faq.answer,
+													}}
+												></span>
+												<ol>
+													{faq.subpoints?.map(
+														(subpoint) => (
+															<li key={subpoint}>
+																{subpoint}
+															</li>
+														)
+													)}
+												</ol>
 											</p>
 										</Disclosure.Panel>
 									</>

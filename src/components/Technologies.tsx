@@ -1,3 +1,9 @@
+import laravelIcon from '@/assets/images/laravel.png';
+import nodejsIcon from '@/assets/images/nodejs.png';
+import reactIcon from '@/assets/images/react.png';
+import strapiIcon from '@/assets/images/strapi.png';
+import wordpressIcon from '@/assets/images/wordpress.png';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Technologies = () => {
@@ -5,38 +11,38 @@ const Technologies = () => {
 		<div className="">
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-					<img
+					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-						src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-						alt="Transistor"
+						src={reactIcon}
+						alt="Reactjs"
 						width={158}
 						height={48}
 					/>
-					<img
+					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-						src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-						alt="Reform"
+						src={laravelIcon}
+						alt="Laravel"
 						width={158}
 						height={48}
 					/>
-					<img
+					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-						src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-						alt="Tuple"
+						src={wordpressIcon}
+						alt="Wordpress"
 						width={158}
 						height={48}
 					/>
-					<img
+					<Image
 						className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-						src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-						alt="SavvyCal"
+						src={nodejsIcon}
+						alt="Nodejs"
 						width={158}
 						height={48}
 					/>
-					<img
-						className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-						src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-						alt="Statamic"
+					<Image
+						className="col-span-2 col-start-2 max-h-12 w-full translate-y-2 object-contain sm:col-start-auto lg:col-span-1"
+						src={strapiIcon}
+						alt="Strapi"
 						width={158}
 						height={48}
 					/>

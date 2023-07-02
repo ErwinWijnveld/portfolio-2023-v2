@@ -1,7 +1,10 @@
 import CenterText from '@/components/CenterText';
 import FAQ from '@/components/FAQ';
+import FeaturedBlogs from '@/components/FeaturedBlogs';
 import HeroMockup from '@/components/HeroMockup';
 import Layout from '@/components/Layout';
+import Newsletter from '@/components/Newsletter';
+import RightPinkGradient from '@/components/RightPinkGradient';
 import Steps from '@/components/Steps';
 import Technologies from '@/components/Technologies';
 import Testimonial from '@/components/Testimonial';
@@ -22,6 +25,8 @@ export default function Home() {
 			<Technologies />
 			<Steps />
 			<FAQ />
+			<FeaturedBlogs ids={[1, 2, 3]} />
+			<Newsletter />
 		</Layout>
 	);
 }

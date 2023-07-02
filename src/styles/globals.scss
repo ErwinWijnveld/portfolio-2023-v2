@@ -27,3 +27,15 @@ h3 {
 h4 {
   @apply text-lg sm:text-xl md:text-2xl;
 }
+
+ol {
+  @apply list-decimal pl-8;
+
+  li {
+    @apply mb-4;
+  }
+}
+
+p a {
+  @apply text-indigo-500 underline;
+}

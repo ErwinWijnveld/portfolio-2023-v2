@@ -1,4 +1,5 @@
 import CustomCursor from './CustomCursor';
+import Footer from './Footer';
 import HeaderNew from './HeaderNew';
 import Meta from './Meta';
 
@@ -9,6 +10,7 @@ const Layout = ({ children, meta, ...rest }: any) => {
 			<HeaderNew />
 			<CustomCursor />
 			<main>{children}</main>
+			<Footer />
 		</div>
 	);
 };

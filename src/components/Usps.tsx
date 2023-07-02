@@ -3,28 +3,31 @@ import {
 	CloudArrowUpIcon,
 	CogIcon,
 	LockClosedIcon,
+	PaintBrushIcon,
+	PresentationChartLineIcon,
 	ServerIcon,
 	ShieldCheckIcon,
+	WrenchScrewdriverIcon,
 } from '@heroicons/react/24/outline';
 
 const features = [
 	{
-		name: 'Push to Deploy',
+		name: 'Ontwerp op maat',
 		description:
-			'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-		icon: CloudArrowUpIcon,
+			'Een modern en uniek ontwerp dat past bij jouw bedrijf en doelgroep, met een focus op conversie.',
+		icon: PaintBrushIcon,
 	},
 	{
-		name: 'SSL Certificates',
+		name: 'Ontwikkeling',
 		description:
-			'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-		icon: LockClosedIcon,
+			'Ontwikkeling van een interactief en veilige website die goed werkt op alle apparaten.',
+		icon: WrenchScrewdriverIcon,
 	},
 	{
-		name: 'Simple Queues',
+		name: 'Optimalisatie',
 		description:
-			'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.',
-		icon: ArrowPathIcon,
+			'Optimalisatie van de website voor snelheid en zoekmachines, zodat je website goed vindbaar is.',
+		icon: PresentationChartLineIcon,
 	},
 	// {
 	// 	name: 'Advanced Security',
@@ -172,9 +175,9 @@ export default function Usps() {
 					Alles wat je nodig hebt om digitaal op te vallen
 				</h2>
 				<p className="mx-auto mt-5 max-w-prose text-xl text-zinc-100/80">
-					Phasellus lorem quam molestie id quisque diam aenean nulla
-					in. Accumsan in quis quis nunc, ullamcorper malesuada.
-					Eleifend condimentum id viverra nulla.
+					Of je nu een nieuwe website wilt laten maken of je huidige
+					website wilt verbeteren, ik help je graag om jouw online
+					doelen te bereiken.
 				</p>
 				<div className="mt-20">
 					<div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">

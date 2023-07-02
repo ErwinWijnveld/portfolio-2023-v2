@@ -116,13 +116,18 @@ const HeroMockup = () => {
 						behavior: 'smooth',
 					});
 				}}
-				className="absolute bottom-0 right-0 z-10 opacity-100 transition duration-700 ease-out hover:scale-125 hover:opacity-100"
+				className="absolute bottom-0 right-0 z-10 cursor-pointer opacity-100 transition duration-700 ease-out hover:scale-125 hover:opacity-100"
 			>
-				<svg width="200" height="200" className=" animate-spin-slower">
+				<svg
+					width="200"
+					height="200"
+					className="animate-spin-slower cursor-pointer"
+				>
 					<path
 						id="circlePath"
 						d="M100,100 m-50,0a50,50 0 1,0 100,0a50,50 0 1,0 -100,0"
 						fill="transparent"
+						className=" cursor-pointer"
 					/>
 					<text
 						fill="#ffffff"
@@ -135,6 +140,7 @@ const HeroMockup = () => {
 							// mirror text
 							// textAnchor: 'middle',
 						}}
+						className=" cursor-pointer"
 					>
 						<textPath href="#circlePath">
 							Lees meer&nbsp;●&nbsp;Lees meer&nbsp;●&nbsp;

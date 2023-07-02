@@ -9,10 +9,14 @@ import {
 import {
 	ArrowPathIcon,
 	Bars3Icon,
+	ChartBarIcon,
 	ChartPieIcon,
 	CursorArrowRaysIcon,
 	FingerPrintIcon,
+	PaintBrushIcon,
+	PresentationChartLineIcon,
 	SquaresPlusIcon,
+	WrenchScrewdriverIcon,
 	XMarkIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
@@ -20,39 +24,33 @@ import { Fragment, useState } from 'react';
 
 const products = [
 	{
-		name: 'Analytics',
-		description: 'Get a better understanding of your traffic',
+		name: 'Op maat ontwerp',
+		description: 'Webdesign dat past bij jouw bedrijf.',
 		href: '#',
-		icon: ChartPieIcon,
+		icon: PaintBrushIcon,
 	},
 	{
-		name: 'Engagement',
-		description: 'Speak directly to your customers',
+		name: 'Ontwikkeling',
+		description: 'Ontwikkeling van een supermoderne website',
 		href: '#',
-		icon: CursorArrowRaysIcon,
+		icon: WrenchScrewdriverIcon,
 	},
 	{
-		name: 'Security',
-		description: 'Your customers’ data will be safe and secure',
+		name: 'Optimalisatie',
+		description: 'Optimalisatie voor snelheid/zoekmachines',
 		href: '#',
-		icon: FingerPrintIcon,
+		icon: PresentationChartLineIcon,
 	},
 	{
-		name: 'Integrations',
-		description: 'Connect with third-party tools',
+		name: 'Totaalpakket',
+		description: 'Alles in één, van ontwerp tot optimalisatie',
 		href: '#',
 		icon: SquaresPlusIcon,
 	},
-	{
-		name: 'Automations',
-		description: 'Build strategic funnels that will convert',
-		href: '#',
-		icon: ArrowPathIcon,
-	},
 ];
 const callsToAction = [
-	{ name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-	{ name: 'Contact sales', href: '#', icon: PhoneIcon },
+	{ name: 'Bekijk projecten', href: '/projecten', icon: PlayCircleIcon },
+	{ name: 'Bel direct', href: 'tel:+31615207232', icon: PhoneIcon },
 ];
 
 function classNames(...classes: any) {
@@ -97,7 +95,7 @@ export default function HeaderNew() {
 								</clipPath>
 							</defs>
 						</svg>
-						<span className="text-lg font-semibold">
+						<span className="whitespace-nowrap text-lg font-semibold">
 							Erwin Wijnveld
 						</span>
 					</Link>
@@ -113,64 +111,64 @@ export default function HeaderNew() {
 					</button>
 				</div>
 				<Popover.Group className="relative hidden px-8 py-4 lg:flex lg:gap-x-12">
-					<div className="absolute inset-0 -z-10 overflow-hidden rounded-full  ">
-						<div className="absolute inset-0 bg-zinc-500/80 blur-3xl"></div>
+					<div className="absolute inset-0 -z-10 overflow-hidden rounded-full backdrop-blur-2xl ">
+						<div className="absolute inset-0 scale-150 bg-zinc-400/30"></div>
 					</div>
 					<Popover className="relative">
-						<Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 ">
+						<Popover.Button className="flex cursor-pointer items-center gap-x-1 text-sm font-semibold leading-6 outline-none ring-0 ">
 							Diensten
 							<ChevronDownIcon
-								className="text-primary h-5 w-5 flex-none"
+								className="text-primary h-5 w-5 flex-none cursor-pointer"
 								aria-hidden="true"
 							/>
 						</Popover.Button>
 
 						<Transition
 							as={Fragment}
-							enter="transition ease-out duration-200"
+							enter="transition ease-out duration-300"
 							enterFrom="opacity-0 translate-y-1"
 							enterTo="opacity-100 translate-y-0"
-							leave="transition ease-in duration-150"
+							leave="transition ease-in duration-200"
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 translate-y-1"
 						>
-							<Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+							<Popover.Panel className="absolute -left-8 top-[calc(100%_+_1rem)] z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-zinc-400/30 shadow-lg ring-1 ring-gray-900/5 backdrop-blur-2xl">
 								<div className="p-4">
 									{products.map((item) => (
 										<div
 											key={item.name}
-											className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
+											className="group relative flex cursor-pointer items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-zinc-900/20"
 										>
-											<div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+											<div className="flex h-11 w-11 flex-none cursor-pointer items-center justify-center rounded-lg bg-zinc-900/50">
 												<item.icon
-													className="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+													className="h-6 w-6"
 													aria-hidden="true"
 												/>
 											</div>
-											<div className="flex-auto">
+											<div className="flex-auto cursor-pointer">
 												<a
 													href={item.href}
-													className="block font-semibold text-gray-900"
+													className="block font-semibold"
 												>
 													{item.name}
 													<span className="absolute inset-0" />
 												</a>
-												<p className="mt-1 text-gray-600">
+												<p className="mt-1 text-zinc-100/80">
 													{item.description}
 												</p>
 											</div>
 										</div>
 									))}
 								</div>
-								<div className="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50">
+								<div className="grid grid-cols-2 divide-x divide-zinc-50/5 bg-zinc-900/50">
 									{callsToAction.map((item) => (
 										<a
 											key={item.name}
 											href={item.href}
-											className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100"
+											className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-zinc-100/80"
 										>
 											<item.icon
-												className="h-5 w-5 flex-none text-gray-400"
+												className="h-5 w-5 flex-none text-white"
 												aria-hidden="true"
 											/>
 											{item.name}
