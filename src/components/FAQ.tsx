@@ -27,8 +27,8 @@ const faqs = [
 	},
 	{
 		question:
-			'Hoe kan ik mijn website laten optimaliseren voor zoekresultatem in de regio Arnhem, Nijmegen en Elst?',
-		answer: 'Om je website te optimaliseren voor zoekresultatem in de regio Arnhem, Nijmegen en Elst, neem ik de volgende stappen:',
+			'Hoe kan ik mijn website laten optimaliseren voor zoekresultaten in de regio Arnhem, Nijmegen en Elst?',
+		answer: 'Om je website te optimaliseren voor zoekresultaten in de regio Arnhem, Nijmegen en Elst, neem ik de volgende stappen:',
 		subpoints: [
 			'Trefwoordenonderzoek - Identificeer relevante zoekwoorden die vaak worden gebruikt door potentiële klanten in de regio.',
 			'Inhoudsoptimalisatie - Optimaliseer de inhoud van je website met de gekozen zoekwoorden, zorg voor kwalitatieve en relevante content.',

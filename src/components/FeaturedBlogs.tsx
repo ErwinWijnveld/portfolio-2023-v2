@@ -57,7 +57,7 @@ export default function FeaturedBlogs({ ids }: { ids: number[] }) {
 							<Link
 								href={blogsMeta?.slug + '/' + post?.slug}
 								key={index}
-								className="flex flex-col items-start"
+								className="flex cursor-pointer flex-col items-start"
 							>
 								<div className="relative w-full">
 									<Image
@@ -86,13 +86,11 @@ export default function FeaturedBlogs({ ids }: { ids: number[] }) {
 									</div>
 									<div className="group relative">
 										<h3 className="mt-3 text-lg font-semibold leading-6">
-											<a href={post?.href}>
-												<span className="absolute inset-0" />
-												{post.title}
-											</a>
+											<span className="absolute inset-0" />
+											{post.title}
 										</h3>
 										<p className="mt-5 line-clamp-3 text-sm leading-6 text-zinc-100/80">
-											{post?.description}
+											{post?.excerpt}
 										</p>
 									</div>
 								</div>

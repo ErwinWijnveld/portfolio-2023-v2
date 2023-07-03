@@ -1,4 +1,4 @@
-const RightPinkGradient = () => {
+const RightPinkGradient = ({ className }: any) => {
 	return (
 		<svg
 			width="1440"
@@ -6,7 +6,7 @@ const RightPinkGradient = () => {
 			viewBox="0 0 1440 1113"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			className="absolute right-0 -z-10 -translate-y-1/2"
+			className={'absolute right-0 -z-10 -translate-y-1/2 ' + className}
 			preserveAspectRatio="xMidYMid meet"
 		>
 			<g clip-path="url(#clip0_307_2)">
