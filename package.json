@@ -11,6 +11,8 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "@studio-freight/lenis": "^1.0.16",
+    "@studio-freight/react-lenis": "^0.0.21",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -19,6 +21,7 @@
     "gsap": "^3.12.2",
     "next": "13.4.7",
     "next-sitemap": "^4.1.8",
+    "nodemailer": "^6.9.3",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",

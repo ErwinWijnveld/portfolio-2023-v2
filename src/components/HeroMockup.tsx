@@ -45,11 +45,11 @@ const HeroMockup = () => {
 
 	return (
 		<section
-			className="text-primary-light relative flex min-h-screen items-center overflow-x-clip md:py-12"
+			className="text-primary-light relative flex min-h-screen items-center overflow-x-clip bg-black md:py-12"
 			ref={wrapRef}
 		>
 			<BackgroundGradient
-				className="absolute right-0 top-0 -z-10 h-full w-full translate-x-24"
+				className="absolute right-0 top-0 z-10 h-full w-full translate-x-24"
 				preserveAspectRatio="xMidYMid slice"
 			/>
 
@@ -78,12 +78,16 @@ const HeroMockup = () => {
 					}}
 				/>
 			</div>
-			<div className="container flex max-w-7xl items-center justify-between px-6">
-				<div className="translate-y-4">
-					<h1 className="mb-4 text-7xl xl:text-8xl">
-						Laat mij je droomwebsite realiseren
+			<div className="container relative z-20 flex max-w-7xl items-center justify-between px-6">
+				<div className="relative z-10 translate-y-4">
+					<h1 className="monument mb-4 max-w-3xl text-5xl uppercase xl:text-6xl">
+						Jouw{' '}
+						<span className="gradient-text transition-colors duration-500">
+							droomwebsite
+						</span>{' '}
+						laten maken
 					</h1>
-					<p className="mb-12 text-zinc-100/80">
+					<p className="mb-12 max-w-2xl text-zinc-100/80">
 						Wil je in de regio Arnhem, Nijmegen, Elst en omstreken
 						een krachtige online aanwezigheid opbouwen? Bij mij kun
 						je terecht om een moderne en gebruiksvriendelijke
@@ -101,7 +105,7 @@ const HeroMockup = () => {
 				</div>
 				<Image
 					ref={imageRef}
-					className="w-1/2"
+					className="absolute right-0 top-1/2 w-1/2 origin-right -translate-y-1/2 scale-90 "
 					src={mockup}
 					alt="mockup"
 					priority
@@ -116,12 +120,12 @@ const HeroMockup = () => {
 						behavior: 'smooth',
 					});
 				}}
-				className="absolute bottom-0 right-0 z-10 cursor-pointer opacity-100 transition duration-700 ease-out hover:scale-125 hover:opacity-100"
+				className="monument absolute bottom-0 right-0 z-30 cursor-pointer opacity-100 transition duration-700 ease-out hover:scale-125 hover:opacity-100"
 			>
 				<svg
 					width="200"
 					height="200"
-					className="animate-spin-slower cursor-pointer"
+					className="animate-spin-slower cursor-pointer "
 				>
 					<path
 						id="circlePath"
@@ -136,7 +140,7 @@ const HeroMockup = () => {
 							textTransform: 'uppercase',
 							letterSpacing: '0.52em',
 							// small text
-							fontSize: '0.8rem',
+							fontSize: '0.63rem',
 							// mirror text
 							// textAnchor: 'middle',
 						}}

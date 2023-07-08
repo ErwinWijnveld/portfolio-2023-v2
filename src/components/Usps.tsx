@@ -20,7 +20,7 @@ const features = [
 	{
 		name: 'Ontwikkeling',
 		description:
-			'Ontwikkeling van een interactief en veilige website die goed werkt op alle apparaten.',
+			'Ontwikkeling van een interactief en veilige website die goed werkt op zowel mobiel als desktop.',
 		icon: WrenchScrewdriverIcon,
 	},
 	{
@@ -185,7 +185,7 @@ export default function Usps() {
 							<div key={feature.name} className="pt-6">
 								<div className="relative flow-root rounded-4xl px-6 pb-8">
 									<div className="absolute inset-0 -z-10 overflow-hidden rounded-4xl  ">
-										<div className="absolute inset-0 scale-150 bg-zinc-700/60 blur-3xl"></div>
+										<div className="absolute inset-0 scale-150 bg-zinc-600/30 backdrop-blur-xl"></div>
 									</div>
 									<div className="-mt-6">
 										<div>

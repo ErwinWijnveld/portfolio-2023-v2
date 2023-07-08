@@ -51,7 +51,7 @@ const faqs = [
 ];
 export default function FAQ() {
 	return (
-		<div className="relative">
+		<div className="relative overflow-x-clip">
 			<LeftOrangeGradient />
 			<div className="container relative z-10 py-12 sm:py-20 lg:py-24">
 				<div className="mx-auto max-w-4xl divide-y divide-white/10">

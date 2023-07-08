@@ -11,19 +11,24 @@ import Testimonial from '@/components/Testimonial';
 import Usps from '@/components/Usps';
 import { Poppins } from 'next/font/google';
 
+const poppins = Poppins({
+	subsets: ['devanagari'],
+	weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+});
+
 export default function Home() {
 	return (
-		<Layout>
+		<Layout className={poppins.className}>
 			<script
 				type="module"
-				src="https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js"
+				src="https://unpkg.com/@splinetool/viewer@0.9.377/build/spline-viewer.js"
 			></script>
-			<div className="nospline pointer-events-none fixed inset-0 -z-10 h-screen w-screen">
-				<spline-viewer
-					class="h-screen w-screen"
-					url="https://prod.spline.design/tFwGilj7o1vRHEUS/scene.splinecode"
-				></spline-viewer>
-			</div>
+			<spline-viewer
+				class="fixed inset-0 h-screen w-screen"
+				loading="eager"
+				url="https://prod.spline.design/m0yLMxXElJDlispH/scene.splinecode"
+			></spline-viewer>
+
 			<HeroMockup />
 			<Usps />
 			{/* <Testimonial /> */}

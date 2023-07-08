@@ -7,10 +7,15 @@
 body {
   @apply bg-black text-white;
 }
+html, * {
+  font-family: var(--font-poppins);
+}
 
 h1, h2, h3, h4, h5 {
   @apply font-semibold;
 }
+
+
 
 h1 {
   @apply text-3xl sm:text-4xl md:text-5xl;
@@ -38,4 +43,24 @@ ol {
 
 p a {
   @apply text-indigo-500 underline;
+}
+
+.monument {
+  font-family: var(--font-monumentextended);
+  font-weight: 400;
+  * {
+    font-family: var(--font-monumentextended);
+    font-weight: 400;
+  }
+}
+
+.nospline {
+  clip-path: polygon(100% 0, 100% 84%, 75% 100%, 0 100%, 0 0);
+}
+
+@layer {
+  .gradient-text {
+    @apply inline bg-gradient-to-r from-[#00F3F9] via-[#FF29A8] to-[#FFBB00] bg-clip-text text-lg text-transparent;
+    font-size: inherit;
+  }
 }
