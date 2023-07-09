@@ -21,9 +21,9 @@ const features = [
 		icon: UserGroupIcon,
 	},
 	{
-		name: 'Ontwerp en Gebruikerservaring.',
+		name: 'Webdesign en Gebruikerservaring.',
 		description:
-			'Maak een supermodern webdesign dat perfect aansluit bij jouw bedrijf en de gebruikerservaring.',
+			'Maak een supermodern ontwerp dat perfect aansluit bij jouw bedrijf en de gebruikerservaring.',
 		icon: PaintBrushIcon,
 	},
 	{

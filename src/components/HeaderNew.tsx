@@ -1,5 +1,6 @@
 'use client';
 
+import { blogsMeta } from '@/data/blogs';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import {
 	ChevronDownIcon,
@@ -24,21 +25,21 @@ import { Fragment, useState } from 'react';
 
 const products = [
 	{
-		name: 'Op maat ontwerp',
-		description: 'Webdesign dat past bij jouw bedrijf.',
-		href: '#',
+		name: 'Webdesign',
+		description: 'Ontwerp dat past bij jouw bedrijf.',
+		href: '/diensten/webdesign',
 		icon: PaintBrushIcon,
 	},
 	{
-		name: 'Ontwikkeling',
+		name: 'Webontwikkeling',
 		description: 'Ontwikkeling van een supermoderne website',
-		href: '#',
+		href: '/diensten/webontwikkeling',
 		icon: WrenchScrewdriverIcon,
 	},
 	{
 		name: 'Optimalisatie',
 		description: 'Optimalisatie voor snelheid/zoekmachines',
-		href: '#',
+		href: '/diensten/optimalisatie',
 		icon: PresentationChartLineIcon,
 	},
 	{
@@ -114,7 +115,7 @@ export default function HeaderNew() {
 					<div className="absolute inset-0 -z-10 overflow-hidden rounded-full backdrop-blur-2xl ">
 						<div className="absolute inset-0 scale-150 bg-zinc-400/30"></div>
 					</div>
-					<Popover className="relative">
+					<Popover className="relative -mr-4">
 						<Popover.Button className="flex cursor-pointer items-center gap-x-1 text-sm font-semibold leading-6 outline-none ring-0 ">
 							Diensten
 							<ChevronDownIcon
@@ -146,13 +147,13 @@ export default function HeaderNew() {
 												/>
 											</div>
 											<div className="flex-auto cursor-pointer">
-												<a
+												<Link
 													href={item.href}
 													className="block font-semibold"
 												>
 													{item.name}
 													<span className="absolute inset-0" />
-												</a>
+												</Link>
 												<p className="mt-1 text-zinc-100/80">
 													{item.description}
 												</p>
@@ -162,7 +163,7 @@ export default function HeaderNew() {
 								</div>
 								<div className="grid grid-cols-2 divide-x divide-zinc-50/5 bg-zinc-900/50">
 									{callsToAction.map((item) => (
-										<a
+										<Link
 											key={item.name}
 											href={item.href}
 											className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-zinc-100/80"
@@ -172,7 +173,7 @@ export default function HeaderNew() {
 												aria-hidden="true"
 											/>
 											{item.name}
-										</a>
+										</Link>
 									))}
 								</div>
 							</Popover.Panel>
@@ -186,7 +187,7 @@ export default function HeaderNew() {
 						Over mij
 					</Link>
 					<Link
-						href="/blogs"
+						href={'/' + blogsMeta.slug}
 						className="text-sm font-semibold leading-6 "
 					>
 						Blog

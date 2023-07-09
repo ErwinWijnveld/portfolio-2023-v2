@@ -1,4 +1,4 @@
-const LeftBlueGradient = () => {
+const LeftBlueGradient = ({ className }: any) => {
 	return (
 		<svg
 			width="1440"
@@ -6,7 +6,7 @@ const LeftBlueGradient = () => {
 			viewBox="0 0 1440 1230"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			className="absolute left-0 -z-10 -translate-x-40"
+			className={'absolute left-0 -z-10 -translate-x-40 ' + className}
 			preserveAspectRatio="xMidYMid meet"
 		>
 			<g clip-path="url(#clip0_306_35)">

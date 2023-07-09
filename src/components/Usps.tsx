@@ -12,13 +12,13 @@ import {
 
 const features = [
 	{
-		name: 'Ontwerp op maat',
+		name: 'Webdesign op maat',
 		description:
 			'Een modern en uniek ontwerp dat past bij jouw bedrijf en doelgroep, met een focus op conversie.',
 		icon: PaintBrushIcon,
 	},
 	{
-		name: 'Ontwikkeling',
+		name: 'Webontwikkeling',
 		description:
 			'Ontwikkeling van een interactief en veilige website die goed werkt op zowel mobiel als desktop.',
 		icon: WrenchScrewdriverIcon,
