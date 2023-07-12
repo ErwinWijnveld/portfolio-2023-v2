@@ -51,7 +51,7 @@ const Technologies = () => {
 				<div className="mt-16 flex justify-center">
 					<div className="relative rounded-full px-4 py-1.5 text-sm leading-6 text-gray-300">
 						<div className="absolute inset-0 -z-10 overflow-hidden rounded-4xl  ">
-							<div className="absolute inset-0 scale-150 bg-zinc-500/80 blur-3xl"></div>
+							<div className="absolute inset-0 scale-150 bg-zinc-500/30 backdrop-blur-xl"></div>
 						</div>
 						<span className="hidden md:inline">
 							Expertise in de nieuwste technologieën en frameworks

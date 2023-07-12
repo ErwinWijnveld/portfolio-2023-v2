@@ -45,8 +45,9 @@ const products = [
 	{
 		name: 'Totaalpakket',
 		description: 'Alles in één, van ontwerp tot optimalisatie',
-		href: '#',
+		href: '/diensten/totaalpakket',
 		icon: SquaresPlusIcon,
+		featured: true,
 	},
 ];
 const callsToAction = [
@@ -136,29 +137,38 @@ export default function HeaderNew() {
 							<Popover.Panel className="absolute -left-8 top-[calc(100%_+_1rem)] z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-zinc-400/30 shadow-lg ring-1 ring-gray-900/5 backdrop-blur-2xl">
 								<div className="p-4">
 									{products.map((item) => (
-										<div
+										<Link
+											href={item.href}
 											key={item.name}
 											className="group relative flex cursor-pointer items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-zinc-900/20"
 										>
-											<div className="flex h-11 w-11 flex-none cursor-pointer items-center justify-center rounded-lg bg-zinc-900/50">
+											<div
+												className={
+													'flex h-11 w-11 flex-none cursor-pointer items-center justify-center rounded-lg  ' +
+													(item?.featured
+														? '  bg-gradient-to-tr from-[#00F3F9]/50 via-[#FF29A8]/50 to-[#FFBB00]/50 group-hover:from-[#00F3F9] group-hover:via-[#FF29A8] group-hover:to-[#FFBB00]'
+														: 'bg-zinc-900/50')
+												}
+											>
 												<item.icon
-													className="h-6 w-6"
+													className={'h-6 w-6 '}
 													aria-hidden="true"
 												/>
 											</div>
 											<div className="flex-auto cursor-pointer">
-												<Link
-													href={item.href}
-													className="block font-semibold"
+												<div
+													className={
+														'block font-semibold'
+													}
 												>
 													{item.name}
 													<span className="absolute inset-0" />
-												</Link>
+												</div>
 												<p className="mt-1 text-zinc-100/80">
 													{item.description}
 												</p>
 											</div>
-										</div>
+										</Link>
 									))}
 								</div>
 								<div className="grid grid-cols-2 divide-x divide-zinc-50/5 bg-zinc-900/50">

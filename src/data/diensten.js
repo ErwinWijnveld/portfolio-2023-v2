@@ -1,4 +1,15 @@
 import spotsquat from '@/assets/images/spotsquat.jpeg'
+import basheuting from '@/assets/images/webdesign/basheuting.png'
+import kbschuytgraaf from '@/assets/images/webdesign/kbschuytgraaf.png'
+import podcast from '@/assets/images/webdesign/podcast.png'
+import vayu from '@/assets/images/webdesign/vayu.png'
+import watch from '@/assets/images/webdesign/watch.png'
+
+import fitnesstracker from '@/assets/images/webontwikkeling/fitnesstracker.png'
+import rebase from '@/assets/images/webontwikkeling/rebase.png'
+import strivesports from '@/assets/images/webontwikkeling/strivesports.png'
+import vayushop from '@/assets/images/webontwikkeling/vayushop.png'
+import warmonthaal from '@/assets/images/webontwikkeling/warmonthaal.png'
 
 export const diensten = [
     {
@@ -11,6 +22,24 @@ export const diensten = [
         },
         description: 'In de moderne zakenwereld is een professionele en goed ontworpen website essentieel voor het succes van uw bedrijf. Het webdesign van uw site heeft invloed op de eerste indruk die potentiële klanten van uw merk krijgen. Het creëert een visuele identiteit die de kernwaarden en het professionalisme van uw bedrijf weerspiegelt.',
         thumbnail: { image: spotsquat, alt: 'Afbeelding van een webdesign product' },
+        images: [
+            {
+                image: watch, alt: 'Webdesign voor horlogemerk Watch'
+            },
+
+            {
+                image: basheuting, alt: 'Webdesign voor onafhankelijke marketeer Bas Heuting'
+            },
+            {
+                image: kbschuytgraaf, alt: 'Webdesign voor kickboksschool KBSchuytgraaf'
+            },
+            {
+                image: vayu, alt: 'Webdesign voor kledingmerk Vayu'
+            },
+            {
+                image: warmonthaal, alt: 'Website ontworpen voor dagbesteding/dagbeleving Warm onthaal'
+            },
+        ],
         timeline: {
             title: 'Een vlekkeloos proces tot een succesvol resultaat',
             items: [
@@ -53,6 +82,23 @@ export const diensten = [
         },
         description: 'Of je nu een eenvoudige portfolio-website of een complexe e-commerce-oplossing nodig hebt, mijn webontwikkelingsproces begint altijd met het luisteren naar jouw wensen en doelen. Samen zullen we jouw visie vormgeven en een website maken die aan al jouw verwachtingen voldoet.',
         thumbnail: { image: null, alt: 'Afbeelding van een webontwikkeling product' },
+        images: [
+            {
+                image: rebase, alt: 'Website gemaakt voor development bedrijf rebase'
+            },
+            {
+                image: vayushop, alt: 'Website gemaakt voor kledingmerk Vayu'
+            },
+            {
+                image: fitnesstracker, alt: 'Website gemaakt voor fitness app fitness tracker'
+            },
+            {
+                image: warmonthaal, alt: 'Website gemaakt voor dagbesteding/dagbeleving Warm onthaal'
+            },
+            {
+                image: strivesports, alt: 'Website gemaakt voor sportbedrijf Strive Sports'
+            }
+        ],
         timeline: {
             title: 'Het beste proces voor het uitwerken van een ontwerp',
             items: [
@@ -95,6 +141,23 @@ export const diensten = [
         },
         description: 'Met mijn optimalisatiedienst kun je jouw website verbeteren voor zoekmachines en conversies. Ik bied een breed scala aan optimalisatietechnieken om ervoor te zorgen dat jouw website optimaal presteert in de online wereld.',
         thumbnail: { image: null, alt: 'Afbeelding van een optimalisatieproduct' },
+        images: [
+            {
+                image: warmonthaal, alt: 'Website gemaakt voor dagbesteding/dagbeleving Warm onthaal'
+            },
+            {
+                image: vayushop, alt: 'Website gemaakt voor kledingmerk Vayu'
+            },
+            {
+                image: fitnesstracker, alt: 'Website gemaakt voor fitness app fitness tracker'
+            },
+            {
+                image: kbschuytgraaf, alt: 'Webdesign voor kickboksschool KBSchuytgraaf'
+            },
+            {
+                image: basheuting, alt: 'Webdesign voor onafhankelijke marketeer Bas Heuting'
+            },
+        ],
         timeline: {
             title: 'Mijn proces voor het optimaliseren van websites',
             items: [

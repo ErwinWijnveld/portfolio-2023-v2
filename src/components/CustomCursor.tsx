@@ -52,7 +52,8 @@ const CustomCursor = () => {
 			// when hovering over a
 			if (
 				e?.target?.tagName === 'A' ||
-				e?.target?.classList.contains('cursor-pointer')
+				e?.target?.classList.contains('cursor-pointer') ||
+				e?.target?.classList.contains('hover:cursor-pointer')
 			) {
 				scaleDashed(true);
 			} else {

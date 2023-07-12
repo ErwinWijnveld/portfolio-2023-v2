@@ -5,11 +5,12 @@ import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import { gsap } from 'gsap';
 import Image from 'next/image';
 import Link from 'next/link';
+import { title } from 'process';
 import { useEffect, useRef } from 'react';
 import BackgroundGradient from './BackgroundGradient';
 import Button from './Button';
 
-const HeroMockup = () => {
+const HeroMockup = ({ children, title, description, cta }: any) => {
 	const blurRef = useRef<HTMLDivElement>(null);
 	const imageRef = useRef<any>(null);
 	const wrapRef = useRef<HTMLDivElement>(null);
@@ -45,63 +46,32 @@ const HeroMockup = () => {
 
 	return (
 		<section
-			className="text-primary-light relative flex min-h-screen items-center overflow-x-clip bg-black md:py-12"
+			className="text-primary-light relative flex h-screen max-h-[1000px] min-h-[650px] items-center overflow-x-clip bg-black md:py-12"
 			ref={wrapRef}
 		>
-			<BackgroundGradient
-				className="absolute right-0 top-0 z-10 h-full w-full translate-x-24"
-				preserveAspectRatio="xMidYMid slice"
-			/>
+			{/* bg gradient */}
+			{children}
 
-			<div
-				className="pointer-events-none absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl"
-				aria-hidden="true"
-				ref={blurRef}
-			>
-				<div
-					className="from-primary-light to-primary-dark relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 -rotate-90 bg-gradient-to-tr opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-					style={{
-						clipPath:
-							'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-					}}
-				/>
-			</div>
-			<div
-				className="pointer-events-none absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl"
-				aria-hidden="true"
-			>
-				<div
-					className="from-primary-light to-primary-dark relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 -rotate-90 bg-gradient-to-tr opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-					style={{
-						clipPath:
-							'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
-					}}
-				/>
-			</div>
 			<div className="container relative z-20 flex max-w-7xl items-center justify-between px-6">
 				<div className="relative z-10 translate-y-4">
-					<h1 className="monument mb-4 max-w-3xl text-5xl uppercase xl:text-6xl">
-						Jouw{' '}
-						<span className="gradient-text transition-colors duration-500">
-							droomwebsite
-						</span>{' '}
-						laten maken
-					</h1>
-					<p className="mb-12 max-w-2xl text-zinc-100/80">
-						Wil je in de regio Arnhem, Nijmegen, Elst en omstreken
-						een krachtige online aanwezigheid opbouwen? Bij mij kun
-						je terecht om een moderne en gebruiksvriendelijke
-						website te laten bouwen die perfect aansluit bij jouw
-						wensen.
-					</p>
-					<Button
-						as={Link}
-						href="/projecten"
-						className="bg-primary-light text-brown-dark group flex w-max items-center !px-12 font-semibold"
-					>
-						Bekijk projecten
-						<ArrowRightCircleIcon className="ml-4 h-6 w-6 transition group-hover:translate-x-2" />
-					</Button>
+					<h1
+						className="monument mb-4 max-w-3xl text-5xl uppercase xl:text-6xl"
+						dangerouslySetInnerHTML={{ __html: title }}
+					></h1>
+					<p
+						className="mb-12 max-w-2xl text-zinc-100/80"
+						dangerouslySetInnerHTML={{ __html: description }}
+					></p>
+					{cta?.href && (
+						<Button
+							as={Link}
+							href={cta.href}
+							className="bg-primary-light text-brown-dark group flex w-max items-center !px-12 font-semibold"
+						>
+							{cta?.title}
+							<ArrowRightCircleIcon className="ml-4 h-6 w-6 transition group-hover:translate-x-2" />
+						</Button>
+					)}
 				</div>
 				<Image
 					ref={imageRef}
