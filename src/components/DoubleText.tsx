@@ -19,11 +19,11 @@ export default function DoubleText({ topTitle, title, left, right }: any) {
 					<div className="relative md:p-6">
 						<div className="lg:grid lg:grid-cols-2 lg:gap-6">
 							<div
-								className=" text-zinc-100/80 lg:max-w-none"
+								className=" basecolor lg:max-w-none"
 								dangerouslySetInnerHTML={{ __html: left }}
 							></div>
 							<div
-								className=" mt-6 text-zinc-100/80 lg:mt-0"
+								className=" basecolor mt-6 lg:mt-0"
 								dangerouslySetInnerHTML={{ __html: right }}
 							></div>
 						</div>

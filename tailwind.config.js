@@ -14,12 +14,12 @@ module.exports = {
       },
       container: {
         center: true,
-        padding: '.5rem',
+        padding: '2rem',
         screens: {
           sm: '100%',
           md: '768px',
           lg: '1024px',
-          xl: '1190px',
+          xl: '1222px',
         },
       },
       animation: {

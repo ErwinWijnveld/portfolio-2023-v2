@@ -39,8 +39,7 @@ const index = () => {
 					</div>
 				</div>
 			</section>
-			<Usps />
-			<div className="py-20">
+			<div className="pt-40">
 				<Technologies />
 			</div>
 			<FAQ />

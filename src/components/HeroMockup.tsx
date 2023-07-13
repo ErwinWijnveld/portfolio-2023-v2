@@ -46,7 +46,7 @@ const HeroMockup = ({ children, title, description, cta }: any) => {
 
 	return (
 		<section
-			className="text-primary-light relative flex h-screen max-h-[1000px] min-h-[650px] items-center overflow-x-clip bg-black md:py-12"
+			className="text-primary-light relative flex h-screen max-h-[900px] min-h-[650px] items-center overflow-x-clip bg-black md:py-12"
 			ref={wrapRef}
 		>
 			{/* bg gradient */}
@@ -59,7 +59,7 @@ const HeroMockup = ({ children, title, description, cta }: any) => {
 						dangerouslySetInnerHTML={{ __html: title }}
 					></h1>
 					<p
-						className="mb-12 max-w-2xl text-zinc-100/80"
+						className="basecolor mb-12 max-w-2xl"
 						dangerouslySetInnerHTML={{ __html: description }}
 					></p>
 					{cta?.href && (

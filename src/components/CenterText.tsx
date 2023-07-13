@@ -8,7 +8,7 @@ export default function CenterText() {
 						<br />
 						Start using our app today.
 					</h2>
-					<p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-zinc-100/80">
+					<p className="basecolor mx-auto mt-6 max-w-xl text-lg leading-8">
 						Incididunt sint fugiat pariatur cupidatat consectetur
 						sit cillum anim id veniam aliqua proident excepteur
 						commodo do ea.

@@ -36,7 +36,7 @@ export default function FeaturedBlogs({ ids }: { ids: number[] }) {
 						Blog
 					</p>
 					<h2 className="mt-2 ">Uitgelichte blogartikelen</h2>
-					<p className="mt-2 text-lg leading-8 text-zinc-100/80">
+					<p className="basecolor mt-2 text-lg leading-8">
 						Op mijn blog schrijf ik over de nieuwste technologieën,
 						frameworks en tools die ik gebruik. Ook schrijf ik over
 						mijn ervaringen met het opzetten van een eigen bedrijf.

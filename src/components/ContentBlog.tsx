@@ -26,13 +26,13 @@ export default function ContentBlog({
 									className="inline-flex items-center bg-gradient-to-r from-[#FF29A8] to-[#FFBB00] bg-clip-text text-base font-semibold text-transparent"
 								>
 									Blog
-									<ArrowRightIcon className="mx-2 inline h-3 w-3 text-zinc-100/80" />
+									<ArrowRightIcon className="basecolor mx-2 inline h-3 w-3" />
 									{category?.title}
 								</Link>
 								<h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
 									{title}
 								</h1>
-								<p className="mt-6 text-xl leading-8 text-zinc-100/80">
+								<p className="basecolor mt-6 text-xl leading-8">
 									{excerpt}
 								</p>
 							</div>
@@ -49,7 +49,7 @@ export default function ContentBlog({
 							src={thumbnail?.image || mockup}
 						/>
 					</div>
-					<div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 [&_p]:mb-8 [&_p]:text-zinc-100/80">
+					<div className="[&_p]:basecolor lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 [&_p]:mb-8">
 						<div className="lg:pr-4">
 							<div
 								className="max-w-xl text-base leading-7 lg:max-w-lg"

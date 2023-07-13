@@ -136,10 +136,10 @@ export default function HeaderNew() {
 						>
 							<Popover.Panel className="absolute -left-8 top-[calc(100%_+_1rem)] z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-zinc-400/30 shadow-lg ring-1 ring-gray-900/5 backdrop-blur-2xl">
 								<div className="p-4">
-									{products.map((item) => (
+									{products.map((item, index) => (
 										<Link
 											href={item.href}
-											key={item.name}
+											key={index}
 											className="group relative flex cursor-pointer items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-zinc-900/20"
 										>
 											<div
@@ -147,7 +147,16 @@ export default function HeaderNew() {
 													'flex h-11 w-11 flex-none cursor-pointer items-center justify-center rounded-lg  ' +
 													(item?.featured
 														? '  bg-gradient-to-tr from-[#00F3F9]/50 via-[#FF29A8]/50 to-[#FFBB00]/50 group-hover:from-[#00F3F9] group-hover:via-[#FF29A8] group-hover:to-[#FFBB00]'
-														: 'bg-zinc-900/50')
+														: '') +
+													(index === 0
+														? 'bg-[#FFBB00]/20 group-hover:bg-[#FFBB00]/60'
+														: '') +
+													(index === 1
+														? 'bg-[#FF29A8]/20 group-hover:bg-[#FF29A8]/60'
+														: '') +
+													(index === 2
+														? 'bg-[#00F3F9]/20 group-hover:bg-[#00F3F9]/60'
+														: '')
 												}
 											>
 												<item.icon
@@ -164,7 +173,7 @@ export default function HeaderNew() {
 													{item.name}
 													<span className="absolute inset-0" />
 												</div>
-												<p className="mt-1 text-zinc-100/80">
+												<p className="basecolor mt-1">
 													{item.description}
 												</p>
 											</div>
@@ -176,7 +185,7 @@ export default function HeaderNew() {
 										<Link
 											key={item.name}
 											href={item.href}
-											className="flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6 text-zinc-100/80"
+											className="basecolor flex items-center justify-center gap-x-2.5 p-3 text-sm font-semibold leading-6"
 										>
 											<item.icon
 												className="h-5 w-5 flex-none text-white"

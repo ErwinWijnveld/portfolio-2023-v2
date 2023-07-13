@@ -27,7 +27,7 @@ const HeroImages = (props: any) => {
 								<h1 className="monument xl:text-7xl">
 									{props?.title}
 								</h1>
-								<p className="relative mb-8 mt-6 text-lg leading-8 text-zinc-100/80 sm:max-w-md lg:max-w-none">
+								<p className="basecolor relative mb-8 mt-6 text-lg leading-8 sm:max-w-md lg:max-w-none">
 									{props.description}
 								</p>
 								<Button

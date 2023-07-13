@@ -27,7 +27,7 @@ const BlogItem = (post: any) => {
 				</div>
 				<div className="max-w-xl">
 					<div className="mt-8 flex items-center gap-x-4 text-xs">
-						<time dateTime={dateTime} className="text-zinc-100/80">
+						<time dateTime={dateTime} className="basecolor">
 							{date}
 						</time>
 						<span className="relative z-10 rounded-full bg-zinc-800 px-3 py-1.5 font-medium text-zinc-100">
@@ -39,7 +39,7 @@ const BlogItem = (post: any) => {
 							<span className="absolute inset-0" />
 							{post.title}
 						</h3>
-						<p className="mt-5 line-clamp-3 text-sm leading-6 text-zinc-100/80">
+						<p className="basecolor mt-5 line-clamp-3 text-sm leading-6">
 							{post?.excerpt}
 						</p>
 					</div>

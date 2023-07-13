@@ -80,7 +80,7 @@ export const diensten = [
             seo_title: "Professionele Website Laten Maken | Webontwikkelaar regio Arnhem, Nijmegen en Elst",
             seo_description: "Op zoek naar een webontwikkelaar in regio Arnhem, Nijmegen en Elst? Laat een professionele website maken die jouw online aanwezigheid versterkt. Ontdek mijn expertise in webdesign en webontwikkeling."
         },
-        description: 'Of je nu een eenvoudige portfolio-website of een complexe e-commerce-oplossing nodig hebt, mijn webontwikkelingsproces begint altijd met het luisteren naar jouw wensen en doelen. Samen zullen we jouw visie vormgeven en een website maken die aan al jouw verwachtingen voldoet.',
+        description: 'Of je nu een eenvoudige informatieve website of een complexe e-commerce-oplossing nodig hebt, mijn expertise in verschillende webontwikkelingstechnologieën stelt me in staat om een website te maken die aan jouw behoeften voldoet',
         thumbnail: { image: null, alt: 'Afbeelding van een webontwikkeling product' },
         images: [
             {

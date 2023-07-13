@@ -174,7 +174,7 @@ export default function Usps() {
 				<h2 className="mt-2 tracking-tight">
 					Alles wat je nodig hebt om digitaal op te vallen
 				</h2>
-				<p className="mx-auto mt-5 max-w-prose text-xl text-zinc-100/80">
+				<p className="basecolor mx-auto mt-5 max-w-prose text-xl">
 					Of je nu een nieuwe website wilt laten maken of je huidige
 					website wilt verbeteren, ik help je graag om jouw online
 					doelen te bereiken.
@@ -199,7 +199,7 @@ export default function Usps() {
 										<h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight">
 											{feature.name}
 										</h3>
-										<p className="mt-5 text-base leading-7 text-zinc-100/80">
+										<p className="basecolor mt-5 text-base leading-7">
 											{feature.description}
 										</p>
 									</div>

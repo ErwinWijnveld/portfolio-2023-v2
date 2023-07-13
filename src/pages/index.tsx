@@ -1,16 +1,15 @@
+import code from '@/assets/images/screens/Code.png';
+import figma from '@/assets/images/screens/Figma.png';
+import optimization from '@/assets/images/screens/optimization.png';
 import BackgroundGradient from '@/components/BackgroundGradient';
-import CenterText from '@/components/CenterText';
 import FAQ from '@/components/FAQ';
 import FeaturedBlogs from '@/components/FeaturedBlogs';
 import HeroMockup from '@/components/HeroMockup';
+import ImageTextBackdrop from '@/components/ImageTextBackdrop';
 import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
-import RightPinkGradient from '@/components/RightPinkGradient';
-import Steps from '@/components/Steps';
 import Technologies from '@/components/Technologies';
-import Testimonial from '@/components/Testimonial';
 import Usps from '@/components/Usps';
-import { Poppins } from 'next/font/google';
 
 export default function Home() {
 	return (
@@ -51,7 +50,42 @@ export default function Home() {
 			<Usps />
 			{/* <Testimonial /> */}
 			<Technologies />
-			<Steps />
+			<div className="py-6 md:py-12"></div>
+			<ImageTextBackdrop
+				rtl
+				image={figma}
+				alt="Ontwerp gemaatk in Figma"
+				title="Webdesign"
+				text="Een goed ontwerp is de basis van een goede website. Het ontwerp is het eerste wat de bezoeker ziet en bepaalt of de bezoeker blijft of weggaat. Ik zorg ervoor dat het ontwerp aansluit bij jouw huisstijl en doelgroep."
+				cta={{
+					title: 'Lees meer',
+					href: '/diensten/webdesign',
+				}}
+			/>
+			<ImageTextBackdrop
+				image={code}
+				alt="Website maatwerk laten maken met code"
+				title="Webontwikkeling"
+				text="Een website is meer dan alleen een mooi ontwerp, het moet ook goed werken. Met mijn expertise in verschillende technologieën kan ik al jouw wensen realiseren. Van een simpele website tot een complexe webapplicatie."
+				cta={{
+					title: 'Lees meer',
+					href: '/diensten/webontwikkeling',
+				}}
+			/>
+
+			<ImageTextBackdrop
+				rtl
+				image={optimization}
+				alt="Website optimaliseren met googla analytics en googlt tagmanager"
+				title="Optimalisatie"
+				text="Een website is nooit af. Door middel van data analyse kan ik de website optimaliseren. Ik kan bijvoorbeeld zien waar bezoekers afhaken en dit verbeteren. Zo zorg ik voor een constant converterende website."
+				cta={{
+					title: 'Lees meer',
+					href: '/diensten/optimalisatie',
+				}}
+			/>
+			<div className="py-6 md:py-12"></div>
+
 			<FAQ />
 			<FeaturedBlogs ids={[1, 2, 3]} />
 			<Newsletter />

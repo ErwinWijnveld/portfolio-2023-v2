@@ -1,6 +1,9 @@
 import FullScreenGradient from '@/components/FullScreenGradient';
 import HeroMockup from '@/components/HeroMockup';
 import Layout from '@/components/Layout';
+import Steps from '@/components/Steps';
+import Technologies from '@/components/Technologies';
+import Usps from '@/components/Usps';
 
 const Totaalpakket = () => {
 	return (
@@ -22,6 +25,10 @@ const Totaalpakket = () => {
 			>
 				<FullScreenGradient />
 			</HeroMockup>
+			<div className="py-6 md:py-20"></div>
+			<Technologies />
+
+			<Steps />
 		</Layout>
 	);
 };

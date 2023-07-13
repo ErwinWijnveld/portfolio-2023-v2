@@ -36,7 +36,7 @@ const Timeline = ({ items, title }: any) => {
 							<p className="mt-6 text-[17px] font-semibold leading-8 tracking-tight text-white">
 								{item.title}
 							</p>
-							<p className="mt-1 text-sm leading-7 text-zinc-100/80">
+							<p className="basecolor mt-1 text-sm leading-7">
 								{item.description}
 							</p>
 						</div>
