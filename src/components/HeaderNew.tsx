@@ -221,37 +221,61 @@ export default function HeaderNew() {
 			</nav>
 			<Dialog
 				as="div"
-				className="lg:hidden"
+				className="relative z-[1000] lg:hidden"
 				open={mobileMenuOpen}
 				onClose={setMobileMenuOpen}
 			>
 				<div className="fixed inset-0 z-10" />
-				<Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-					<div className="flex items-center justify-between">
-						<a href="#" className="-m-1.5 p-1.5">
-							<span className="sr-only">Your Company</span>
-							<img
+				<Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-zinc-900/60 backdrop-blur-md sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+					<div className="flex items-center justify-between bg-zinc-900/20 px-6 py-6 backdrop-blur-md">
+						<Link
+							href="/"
+							className="-m-1.5 flex items-center gap-3 p-1.5"
+						>
+							<span className="sr-only">ErwinWijnveld</span>
+							<svg
+								viewBox="0 0 389 287"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
 								className="h-8 w-auto"
-								src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-								alt=""
-							/>
-						</a>
+							>
+								<g clipPath="url(#clip0_507_8)">
+									<path
+										d="M186.65 128.16L220.4 185.49H366.4L385.52 151.34C385.52 151.34 392.02 142.34 385.52 128.16C385.92 128.56 313.52 7.39 313.52 7.39C313.52 7.39 308.69 -3.61 287.52 -4H71.57L0 88.71H126.87L117.11 107L75.23 107.82C75.23 107.82 59 128.56 59.37 142C59.74 155.44 74.82 176.16 74.82 176.16H127.28L137.85 194.87H11.39L81.33 286.77H282.56C282.56 286.77 305.79 286.77 319.62 265.62L344.42 224.96L177.3 224.15L130.12 141.39L176.12 60.68H270.86L308.68 127.77L186.65 128.16Z"
+										fill="#ffffff"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_507_8">
+										<rect
+											width="388.39"
+											height="290.75"
+											fill="white"
+											transform="translate(0 -4)"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+							<span className="whitespace-nowrap text-lg font-semibold">
+								Erwin Wijnveld
+							</span>
+						</Link>
 						<button
 							type="button"
-							className="-m-2.5 rounded-md p-2.5  "
+							className="-m-2.5 rounded-md p-2.5"
 							onClick={() => setMobileMenuOpen(false)}
 						>
 							<span className="sr-only">Close menu</span>
 							<XMarkIcon className="h-6 w-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="mt-6 flow-root">
+					<div className="mt-6 flow-root px-6 pb-6">
 						<div className="-my-6 divide-y divide-gray-500/10">
 							<div className="space-y-2 py-6">
 								<Disclosure as="div" className="-mx-3">
 									{({ open }) => (
 										<>
-											<Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-gray-50">
+											<Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-zinc-900/10 hover:backdrop-blur-md">
 												Product
 												<ChevronDownIcon
 													className={classNames(

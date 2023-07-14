@@ -1,6 +1,8 @@
+import FeaturedBlogs from '@/components/FeaturedBlogs';
 import FullScreenGradient from '@/components/FullScreenGradient';
 import HeroMockup from '@/components/HeroMockup';
 import Layout from '@/components/Layout';
+import Newsletter from '@/components/Newsletter';
 import Steps from '@/components/Steps';
 import Technologies from '@/components/Technologies';
 import Usps from '@/components/Usps';
@@ -29,6 +31,8 @@ const Totaalpakket = () => {
 			<Technologies />
 
 			<Steps />
+			<FeaturedBlogs ids={[1, 6, 2]} />
+			<Newsletter />
 		</Layout>
 	);
 };

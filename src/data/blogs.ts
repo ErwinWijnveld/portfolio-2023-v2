@@ -127,7 +127,7 @@ export const blogs = [
 			'Als webontwikkelaar begrijp je hoe belangrijk het is dat een website snel laadt. Een trage website kan potentiële bezoekers wegjagen en zelfs leiden tot een hoger bouncepercentage.',
 	},
 	{
-		id: 1,
+		id: 6,
 		title: 'Het Belang van een Digital Agency voor jouw Bedrijf',
 		slug: 'het-belang-van-een-digital-agency',
 		date: '2023-07-09',
@@ -151,7 +151,7 @@ export const blogs = [
 			'Ontdek waarom een digital agency essentieel is voor het succes van jouw bedrijf in Arnhem, Nijmegen en Elst. Leer meer over webontwikkeling, webdesign en optimalisatie.',
 	},
 	{
-		id: 2,
+		id: 7,
 		title: 'Webontwikkeling: Trends en Technologieën',
 		slug: 'webontwikkeling-trends-en-technologieen',
 		date: '2023-07-07',
@@ -175,7 +175,7 @@ export const blogs = [
 			'Blijf op de hoogte van de nieuwste trends en technologieën in webontwikkeling. Leer hoe moderne frameworks jouw website kunnen verbeteren in Arnhem, Nijmegen en Elst.',
 	},
 	{
-		id: 3,
+		id: 8,
 		title: 'Webdesign: Sleutel tot een Succesvolle Online Aanwezigheid',
 		slug: 'webdesign-sleutel-tot-een-succesvolle-online-aanwezigheid',
 		date: '2023-07-05',
@@ -199,7 +199,7 @@ export const blogs = [
 			'Ontdek waarom webdesign de sleutel is tot een succesvolle online aanwezigheid. Leer hoe je een aantrekkelijke en gebruiksvriendelijke website kunt creëren in Arnhem, Nijmegen en Elst.',
 	},
 	{
-		id: 4,
+		id: 9,
 		title: 'Optimalisatie: Haal het Beste uit jouw Website',
 		slug: 'optimalisatie-haal-het-beste-uit-jouw-website',
 		date: '2023-07-03',
@@ -223,7 +223,7 @@ export const blogs = [
 			'Leer hoe je het beste uit jouw website kunt halen met optimalisatietechnieken. Ontdek hoe je de laadtijd kunt verbeteren en de prestaties kunt optimaliseren in Arnhem, Nijmegen en Elst.',
 	},
 	{
-		id: 5,
+		id: 10,
 		title: 'De Opkomst van 3D Design in Webontwikkeling',
 		slug: 'de-opkomst-van-3d-design-in-webontwikkeling',
 		date: '2023-07-01',

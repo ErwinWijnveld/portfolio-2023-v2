@@ -17,7 +17,7 @@ export default function Home() {
 			meta={{
 				seo_title: 'Erwin Wijnveld | Freelance Designer & Developer',
 				seo_description:
-					'Freelance designer & developer in de regio Arnhem, Nijmegen en Elst gespecialiseerd in het ontwerpen en ontwikkelen van supermoderne websites en webapplicaties.',
+					'Freelance designer & developer in de regio Arnhem, Nijmegen en Elst. Wil jij een supermoderne website laten maken om online op te vallen? Dan ben je aan het juiste adres.',
 			}}
 		>
 			<script
@@ -25,17 +25,18 @@ export default function Home() {
 				src="https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js"
 			></script>
 			<div className="nospline pointer-events-none fixed inset-0 -z-10 h-screen w-screen">
+				{/* @ts-ignore */}
 				<spline-viewer
 					class="h-screen w-screen"
 					url="https://prod.spline.design/tFwGilj7o1vRHEUS/scene.splinecode"
+					// @ts-ignore
 				></spline-viewer>
 			</div>
 			<HeroMockup
 				title='Jouw <span class="gradient-text transition-colors duration-500">droomwebsite</span> laten maken'
-				description="Wil je in de regio Arnhem, Nijmegen, Elst en omstreken
-						een krachtige online aanwezigheid opbouwen? Bij mij kun
-						je terecht om een moderne en gebruiksvriendelijke
-						website te laten bouwen die perfect aansluit bij jouw
+				description="Wil je een website laten maken in de regio Arnhem, Nijmegen, Elst en omstreken om
+						een krachtige online aanwezigheid op te bouwen? Ik ben een ervaren freelance webdesigner & developer, bij mij kun
+						je terecht om een moderne en gebruiksvriendelijke website te laten maken die perfect aansluit bij jouw
 						wensen."
 				cta={{
 					title: 'Bekijk projecten',
@@ -86,8 +87,8 @@ export default function Home() {
 			/>
 			<div className="py-6 md:py-12"></div>
 
-			<FAQ />
-			<FeaturedBlogs ids={[1, 2, 3]} />
+			<FAQ ids={[1, 6, 3, 2, 7]} />
+			<FeaturedBlogs ids={[4, 5, 7]} />
 			<Newsletter />
 		</Layout>
 	);

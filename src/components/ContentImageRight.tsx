@@ -5,13 +5,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import LeftBlueGradient from './LeftBlueGradient';
 
-export default function ContentBlog({
+export default function ContentImageRight({
 	title,
 	excerpt,
 	category,
 	content,
 	id,
 	thumbnail,
+	breadcrumbs,
 }: any) {
 	return (
 		<>
@@ -21,20 +22,25 @@ export default function ContentBlog({
 					<div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
 						<div className="lg:pr-4">
 							<div className="lg:max-w-lg">
-								<Link
-									href={blogsMeta?.slug}
-									className="inline-flex items-center bg-gradient-to-r from-[#FF29A8] to-[#FFBB00] bg-clip-text text-base font-semibold text-transparent"
-								>
-									Blog
+								<p className="inline-flex items-center bg-gradient-to-r from-[#FF29A8] to-[#FFBB00] bg-clip-text text-base font-semibold text-transparent">
+									<Link
+										className="text-inherit"
+										href={breadcrumbs[0].href}
+									>
+										{breadcrumbs[0].title}
+									</Link>
 									<ArrowRightIcon className="basecolor mx-2 inline h-3 w-3" />
-									{category?.title}
-								</Link>
-								<h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+									{breadcrumbs[1].title}
+								</p>
+								<h1 className="mt-2 text-3xl tracking-tight sm:text-3xl">
 									{title}
 								</h1>
-								<p className="basecolor mt-6 text-xl leading-8">
-									{excerpt}
-								</p>
+								<p
+									className="basecolor  mt-6 text-xl leading-8"
+									dangerouslySetInnerHTML={{
+										__html: excerpt,
+									}}
+								></p>
 							</div>
 						</div>
 					</div>
@@ -45,14 +51,15 @@ export default function ContentBlog({
 									? 'object-cover'
 									: 'object-contain'
 							}`}
-							alt={title}
+							alt={thumbnail?.alt}
 							src={thumbnail?.image || mockup}
+							placeholder="blur"
 						/>
 					</div>
 					<div className="[&_p]:basecolor lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 [&_p]:mb-8">
 						<div className="lg:pr-4">
 							<div
-								className="max-w-xl text-base leading-7 lg:max-w-lg"
+								className="landingcontent styled-text max-w-xl text-base leading-7 lg:max-w-lg"
 								dangerouslySetInnerHTML={{ __html: content }}
 							/>
 						</div>

@@ -28,8 +28,8 @@ const Dienst = ({ page }: any) => {
 				<Technologies />
 			</div>
 			<DoubleText {...page?.doubleText} />
-			<FAQ />
-			<FeaturedBlogs ids={[1, 2, 3]} />
+			<FAQ ids={page?.faqIds} />
+			<FeaturedBlogs ids={page?.featuredBlogIds} />
 			<Newsletter />
 		</Layout>
 	);

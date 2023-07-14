@@ -1,17 +1,16 @@
-import ContentBlog from '@/components/ContentBlog';
+import ContentImageRight from '@/components/ContentImageRight';
 import FAQ from '@/components/FAQ';
 import FeaturedBlogs from '@/components/FeaturedBlogs';
 import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
 import RightPinkGradient from '@/components/RightPinkGradient';
-import Usps from '@/components/Usps';
-import { blogs, blogsMeta } from '@/data/blogs';
+import { blogs, blogsMeta, reversedBlogs } from '@/data/blogs';
 import { GetStaticPaths, GetStaticProps } from 'next';
 
 const Blog = ({ page }: any) => {
 	// get last 3 blogs ids
-	const blogids = blogs
-		?.filter((blog) => blog?.id !== page?.id)
+	const blogids = reversedBlogs
+		?.filter((blog: any) => blog?.id !== page?.id)
 		?.slice(0, 3)
 		.map((blog: any) => blog.id);
 	return (
@@ -22,13 +21,20 @@ const Blog = ({ page }: any) => {
 					'https://erwinwijnveld.nl' + page?.thumbnail?.image?.src,
 			}}
 		>
-			<ContentBlog {...page} />
+			<ContentImageRight
+				breadcrumbs={[
+					{
+						title: 'Blog',
+						href: '/' + blogsMeta?.slug,
+					},
+					{ ...page?.category },
+				]}
+				{...page}
+			/>
 			<div className="relative">
 				<RightPinkGradient />
 			</div>
 			<FeaturedBlogs ids={blogids} />
-			<FAQ />
-			<Usps />
 			<Newsletter />
 		</Layout>
 	);

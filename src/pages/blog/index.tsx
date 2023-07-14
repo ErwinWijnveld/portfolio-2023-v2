@@ -42,7 +42,7 @@ const index = () => {
 			<div className="pt-40">
 				<Technologies />
 			</div>
-			<FAQ />
+			<FAQ ids={[12, 13, 14, 15]} />
 			<Newsletter />
 		</Layout>
 	);

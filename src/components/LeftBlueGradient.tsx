@@ -10,7 +10,6 @@ const LeftBlueGradient = ({ className }: any) => {
 			preserveAspectRatio="xMidYMid meet"
 		>
 			<g clip-path="url(#clip0_306_35)">
-				<rect width="1440" height="1230" fill="black" />
 				<g filter="url(#filter0_f_306_35)">
 					<ellipse
 						cx="219.273"

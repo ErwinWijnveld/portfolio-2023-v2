@@ -70,7 +70,9 @@ export const diensten = [
             title: 'Een optimaal ontwerp proces',
             left: '<p> Mijn aanpak begint altijd met een grondige analyse van jouw bedrijf en doelstellingen. Door middel van nauw overleg en diepgaand onderzoek krijg ik inzicht in jouw specifieke behoeften en het gewenste doel van de website. Of het nu gaat om het creëren van een opvallende visuele identiteit, het verbeteren van de gebruikerservaring of het vergroten van de online zichtbaarheid, ik zorg ervoor dat het ontwerp naadloos aansluit bij jouw bedrijfsstrategie. </p> <p> Met een focus op modern design, maak ik gebruik van de nieuwste trends en technologieën om jouw website een frisse en eigentijdse uitstraling te geven. Ik combineer creativiteit met functionaliteit om een gebruikersvriendelijke interface te creëren die de aandacht trekt en de bezoekers aanzet tot actie. Mijn ontwerpen zijn niet alleen esthetisch aantrekkelijk, maar ook responsief en geoptimaliseerd voor verschillende apparaten, waardoor je een consistent en indrukwekkend gebruikservaring kunt bieden, ongeacht het platform. </p>',
             right: '<p> Als freelance webdesigner begrijp ik het belang van samenwerking en communicatie. Gedurende het hele proces houd ik je op de hoogte en betrek ik je bij de besluitvorming. Jouw feedback en inbreng zijn waardevol voor mij, omdat ik geloof dat een succesvol project gebaseerd is op een goede samenwerking. </p> <p> Als fervent voorstander van modern en innovatief design, blijf ik voortdurend op de hoogte van de nieuwste ontwikkelingen en trends in de webdesignwereld. Ik geloof dat een goed ontwerp niet alleen mooi moet zijn, maar ook functioneel en gebruiksvriendelijk. </p> <p> Dus, als je op zoek bent naar een professionele freelance webdesigner in de regio Arnhem, Elst, Nijmegen en omstreken, ben je hier aan het juiste adres. Neem vandaag nog contact met mij op om te bespreken hoe ik je kan helpen bij het realiseren van een prachtige en effectieve website die de online aanwezigheid van jouw bedrijf versterkt. </p>'
-        }
+        },
+        featuredBlogIds: [8, 4, 1],
+        faqIds: [12, 14, 16, 17]
     },
     {
         id: 2,
@@ -129,7 +131,9 @@ export const diensten = [
             title: 'Hoe ik te werk ga bij het ontwikkelen van een website',
             left: '<p>Ben je op zoek naar een ervaren webontwikkelaar en designer om jouw ideeën om te zetten in een professionele website? Zoek niet verder! Ik ben een freelance webdeveloper en designer met een passie voor het creëren van boeiende en functionele websites.</p><p>Bij het bouwen van websites maak ik gebruik van de nieuwste technologieën en frameworks, waaronder React, Laravel, Strapi en WordPress. Met React kan ik interactieve en responsieve gebruikersinterfaces ontwikkelen die zorgen voor een vlotte en aangename gebruikerservaring. WordPress of Strapi stelt me in staat om flexibele en gebruiksvriendelijke websites te creëren die gemakkelijk kunnen worden beheerd en bijgewerkt.</p>',
             right: '<p>Ik hecht ook veel waarde aan het toevoegen van animaties en interactiviteit aan mijn ontwerpen. Door gebruik te maken van CSS-animaties en JavaScript-functionaliteiten kan ik jouw website tot leven brengen en ervoor zorgen dat bezoekers betrokken blijven. Ik geloof dat een goede gebruikerservaring essentieel is voor het succes van een website, en ik zal ervoor zorgen dat jouw site zowel functioneel als visueel aantrekkelijk is.</p><p>Of je nu in Arnhem, Nijmegen, Elst of ergens anders in de regio gevestigd bent, ik sta klaar om je te helpen met jouw webontwikkelingsbehoeften. Samen zullen we een website maken die voldoet aan jouw verwachtingen en die jouw online aanwezigheid versterkt.</p>'
-        }
+        },
+        featuredBlogIds: [10, 3, 7],
+        faqIds: [13, 18, 19, 20, 21]
     },
     {
         id: 3,
@@ -196,7 +200,9 @@ export const diensten = [
             title: 'Hoe ik te werk ga bij het optimaliseren van een website',
             left: "<p>Als specialist in website optimalisatie begrijp ik het belang van het bereiken van een hogere positie in de zoekresultaten van zoekmachines, zoals Google. Mijn aanpak begint met een grondige analyse van jouw website en concurrenten, waarbij ik op zoek ga naar kansen voor verbetering. Hierbij houd ik rekening met de specifieke regio's waarin je actief bent, zoals Arnhem, Elst en Nijmegen.</p><p>Eerst focus ik me op technische optimalisatie. Ik zorg ervoor dat jouw website snel laadt, een logische structuur heeft en voldoet aan de technische richtlijnen van zoekmachines. Dit om ervoor te zorgen dat jouw website goed geïndexeerd kan worden en beter gevonden kan worden in de zoekresultaten.</p>",
             right: '<p>Daarnaast voer ik on-page optimalisatie uit. Dit betekent dat ik de metatags, inhoud en andere relevante elementen van jouw website aanpas om beter aan te sluiten bij de zoekintentie van jouw doelgroep. Door relevante zoekwoorden strategisch te plaatsen en waardevolle content te bieden, vergroot ik de kans dat jouw website hoger wordt gerankt in de zoekresultaten.</p><p>Naast zoekmachineoptimalisatie richt ik me ook op conversieoptimalisatie. Ik analyseer de gebruikerservaring van jouw website en identificeer knelpunten in het conversieproces. Vervolgens implementeer ik verbeteringen om bezoekers te converteren naar klanten. Dit kan bijvoorbeeld betekenen dat ik de call-to-action knoppen optimaliseer, het checkoutproces vereenvoudig of de navigatie van de website verbeter.</p>'
-        }
+        },
+        featuredBlogIds: [9, 5, 2],
+        faqIds: [22, 23, 24, 25]
     }
 ]
 

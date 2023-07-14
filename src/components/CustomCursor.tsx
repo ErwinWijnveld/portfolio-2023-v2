@@ -76,7 +76,7 @@ const CustomCursor = () => {
 			{/* big circle */}
 			<div
 				ref={cursorRef}
-				className="pointer-events-none fixed -left-20 -top-20 z-[9999] flex h-12 w-12 -translate-x-1/2 -translate-y-1/2 mix-blend-hard-light "
+				className="pointer-events-none fixed -left-20 -top-20 z-[9999] flex hidden h-12 w-12 -translate-x-1/2 -translate-y-1/2 mix-blend-hard-light md:block "
 			>
 				<div
 					ref={cursorInnerRef}

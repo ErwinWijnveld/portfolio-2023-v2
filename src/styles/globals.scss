@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* * {
+  border: 1px solid red;
+} */
 
 body {
   @apply bg-black text-white;
@@ -38,6 +40,16 @@ ol {
 
   li {
     @apply mb-4;
+  }
+}
+
+.styled-text {
+  ul {
+    @apply list-disc pl-8;
+
+    li {
+      @apply mb-4;
+    }
   }
 }
 
@@ -119,4 +131,28 @@ p a {
   100% {
     color: #7e0fff;
   }
+}
+
+
+.landingcontent {
+  h2, h3, h4, h5 {
+    @apply mb-4 md:mb-6;
+  }
+
+  h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+  
+  h2 {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
+  h3 {
+    @apply text-lg sm:text-lg md:text-xl;
+  }
+  
+  h4 {
+    @apply text-lg sm:text-xl md:text-2xl;
+  }
+  
 }

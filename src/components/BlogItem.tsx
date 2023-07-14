@@ -12,7 +12,10 @@ const BlogItem = (post: any) => {
 	});
 
 	return (
-		<Link href={'/' + blogsMeta?.slug + '/' + post?.slug}>
+		<Link
+			data-id={post?.id}
+			href={'/' + blogsMeta?.slug + '/' + post?.slug}
+		>
 			<article className="flex cursor-pointer flex-col items-start">
 				<div className="relative w-full">
 					<Image
