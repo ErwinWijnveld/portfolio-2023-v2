@@ -2,6 +2,7 @@ import johnfrostbrug from '@/assets/images/landingpages/johnfrostbrug.jpeg';
 import ContentImageRight from '@/components/ContentImageRight';
 import FAQ from '@/components/FAQ';
 import Layout from '@/components/Layout';
+import Newsletter from '@/components/Newsletter';
 
 const page = {
 	title: 'Goedkope website laten maken Arnhem: Uw Expert Freelance Webdesigner & Developer',
@@ -38,12 +39,14 @@ const WebsiteLatenMakenArnhem = () => {
 						href: '/',
 					},
 					{
-						title: 'Website laten maken Arnhem',
-						href: '/website-laten-maken-arnhem',
+						title: 'Goedkope website laten maken Arnhem',
+						href: '/goedkope-website-laten-maken-arnhem',
 					},
 				]}
 				{...page}
 			/>
+			<FAQ ids={[37, 8, 33, 9]} />
+			<Newsletter />
 		</Layout>
 	);
 };

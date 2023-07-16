@@ -1,5 +1,6 @@
 import johnfrostbrug from '@/assets/images/landingpages/johnfrostbrug.jpeg';
 import ContentImageRight from '@/components/ContentImageRight';
+import ContentImageRightCopy from '@/components/ContentImageRightCopy';
 import FAQ from '@/components/FAQ';
 import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
@@ -32,7 +33,7 @@ const WebsiteLatenMakenArnhem = () => {
 					'https://erwinwijnveld.nl' + page?.thumbnail?.image?.src,
 			}}
 		>
-			<ContentImageRight
+			<ContentImageRightCopy
 				breadcrumbs={[
 					{
 						title: 'Erwin Wijnveld',

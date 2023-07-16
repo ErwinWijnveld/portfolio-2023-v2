@@ -1,5 +1,6 @@
 'use client';
 
+import Link from '@/components/presets/Link';
 import { blogsMeta } from '@/data/blogs';
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react';
 import {
@@ -20,8 +21,8 @@ import {
 	WrenchScrewdriverIcon,
 	XMarkIcon,
 } from '@heroicons/react/24/outline';
-import Link from 'next/link';
-import { Fragment, useState } from 'react';
+import { useLenis } from '@studio-freight/react-lenis';
+import { Fragment, useEffect, useRef, useState } from 'react';
 
 const products = [
 	{
@@ -61,9 +62,22 @@ function classNames(...classes: any) {
 
 export default function HeaderNew() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+	const headerRef = useRef(null) as any;
+
+	useLenis(({ scroll }: any) => {
+		// called every scroll
+		if (scroll > 80) {
+			headerRef?.current?.classList?.add('activeheader');
+		} else {
+			headerRef?.current?.classList?.remove('activeheader');
+		}
+	});
 
 	return (
-		<header className="text-primary-light fixed top-0 z-50 w-full">
+		<header
+			ref={headerRef}
+			className="text-primary-light fixed top-0 z-50 w-full transition duration-300  "
+		>
 			<nav
 				className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
 				aria-label="Global"
@@ -114,7 +128,7 @@ export default function HeaderNew() {
 				</div>
 				<Popover.Group className="relative hidden px-8 py-4 lg:flex lg:gap-x-12">
 					<div className="absolute inset-0 -z-10 overflow-hidden rounded-full backdrop-blur-2xl ">
-						<div className="absolute inset-0 scale-150 bg-zinc-400/30"></div>
+						<div className="absolute inset-0 scale-150 bg-zinc-600/30"></div>
 					</div>
 					<Popover className="relative -mr-4">
 						<Popover.Button className="flex cursor-pointer items-center gap-x-1 text-sm font-semibold leading-6 outline-none ring-0 ">
@@ -134,7 +148,7 @@ export default function HeaderNew() {
 							leaveFrom="opacity-100 translate-y-0"
 							leaveTo="opacity-0 translate-y-1"
 						>
-							<Popover.Panel className="absolute -left-8 top-[calc(100%_+_1rem)] z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-zinc-400/30 shadow-lg ring-1 ring-gray-900/5 backdrop-blur-2xl">
+							<Popover.Panel className="absolute -left-8 top-[calc(100%_+_1rem)] z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-zinc-600/30 shadow-lg ring-1 ring-gray-900/5 backdrop-blur-2xl">
 								<div className="p-4">
 									{products.map((item, index) => (
 										<Link
@@ -226,8 +240,8 @@ export default function HeaderNew() {
 				onClose={setMobileMenuOpen}
 			>
 				<div className="fixed inset-0 z-10" />
-				<Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-zinc-900/60 backdrop-blur-md sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-					<div className="flex items-center justify-between bg-zinc-900/20 px-6 py-6 backdrop-blur-md">
+				<Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-zinc-900/60 backdrop-blur-xl sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+					<div className="flex items-center justify-between bg-zinc-900/60 px-6 py-6 backdrop-blur-md">
 						<Link
 							href="/"
 							className="-m-1.5 flex items-center gap-3 p-1.5"
@@ -269,14 +283,17 @@ export default function HeaderNew() {
 							<XMarkIcon className="h-6 w-6" aria-hidden="true" />
 						</button>
 					</div>
-					<div className="mt-6 flow-root px-6 pb-6">
-						<div className="-my-6 divide-y divide-gray-500/10">
+					<div className="mt-6 flow-root overflow-hidden px-6 pb-6">
+						<div className="-my-6 divide-y divide-zinc-100/30">
 							<div className="space-y-2 py-6">
-								<Disclosure as="div" className="-mx-3">
+								<Disclosure
+									as="div"
+									className="-mx-3 rounded-lg bg-zinc-900/10  backdrop-blur-md"
+								>
 									{({ open }) => (
 										<>
-											<Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7  hover:bg-zinc-900/10 hover:backdrop-blur-md">
-												Product
+											<Disclosure.Button className="flex w-full items-center justify-between rounded-lg  py-2 pl-3 pr-3.5 text-lg font-semibold  leading-7">
+												Diensten
 												<ChevronDownIcon
 													className={classNames(
 														open
@@ -290,13 +307,13 @@ export default function HeaderNew() {
 											<Disclosure.Panel className="mt-2 space-y-2">
 												{[
 													...products,
-													...callsToAction,
+													// ...callsToAction,
 												].map((item) => (
 													<Disclosure.Button
 														key={item.name}
-														as="a"
+														as={Link}
 														href={item.href}
-														className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7  hover:bg-gray-50"
+														className="list-item translate-x-8 rounded-lg py-2 pr-3 text-base font-semibold leading-7 last-of-type:pb-4"
 													>
 														{item.name}
 													</Disclosure.Button>
@@ -305,32 +322,32 @@ export default function HeaderNew() {
 										</>
 									)}
 								</Disclosure>
-								<a
-									href="#"
-									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+								<Link
+									href="/over-mij"
+									className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7"
 								>
-									Features
-								</a>
-								<a
-									href="#"
-									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+									Over mij
+								</Link>
+								<Link
+									href="/blog"
+									className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7"
 								>
-									Marketplace
-								</a>
-								<a
-									href="#"
-									className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7  hover:bg-gray-50"
+									Blog
+								</Link>
+								<Link
+									href="/projecten"
+									className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7"
 								>
-									Company
-								</a>
+									Projecten
+								</Link>
 							</div>
 							<div className="py-6">
-								<a
-									href="#"
-									className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7  hover:bg-gray-50"
+								<Link
+									href="/contact"
+									className="-mx-3 block rounded-lg px-3 py-2.5 text-lg font-semibold leading-7"
 								>
-									Log in
-								</a>
+									Neem contact op
+								</Link>
 							</div>
 						</div>
 					</div>

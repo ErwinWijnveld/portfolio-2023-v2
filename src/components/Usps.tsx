@@ -51,7 +51,7 @@ const features = [
 
 export default function Usps() {
 	return (
-		<div className="relative py-24 sm:py-32 lg:py-40">
+		<div className="relative overflow-x-clip py-24 sm:py-32 lg:py-40">
 			<svg
 				width="876"
 				height="1502"
@@ -174,7 +174,7 @@ export default function Usps() {
 				<h2 className="mt-2 tracking-tight">
 					Alles wat je nodig hebt om digitaal op te vallen
 				</h2>
-				<p className="basecolor mx-auto mt-5 max-w-prose text-xl">
+				<p className="basecolor mx-auto mt-5 max-w-prose md:text-xl">
 					Of je nu een nieuwe website wilt laten maken of je huidige
 					website wilt verbeteren, ik help je graag om jouw online
 					doelen te bereiken.
@@ -182,7 +182,10 @@ export default function Usps() {
 				<div className="mt-20">
 					<div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
 						{features.map((feature) => (
-							<div key={feature.name} className="pt-6">
+							<div
+								key={feature.name}
+								className="pt-6 sm:last:col-span-2 lg:last:col-span-1"
+							>
 								<div className="relative flow-root rounded-4xl px-6 pb-8">
 									<div className="absolute inset-0 -z-10 overflow-hidden rounded-4xl  ">
 										<div className="absolute inset-0 scale-150 bg-zinc-600/30 backdrop-blur-xl"></div>
@@ -199,7 +202,7 @@ export default function Usps() {
 										<h3 className="mt-8 text-lg font-semibold leading-8 tracking-tight">
 											{feature.name}
 										</h3>
-										<p className="basecolor mt-5 text-base leading-7">
+										<p className="basecolor mx-auto mt-5 max-w-md text-base leading-7">
 											{feature.description}
 										</p>
 									</div>

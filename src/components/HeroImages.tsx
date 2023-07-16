@@ -1,6 +1,6 @@
+import Link from '@/components/presets/Link';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useState } from 'react';
 import Button from './Button';
 import FullScreenGradient from './FullScreenGradient';
@@ -21,19 +21,19 @@ const HeroImages = (props: any) => {
 			<section className="relative isolate py-24">
 				<FullScreenGradient className="-z-10" />
 				<div className="overflow-hidden">
-					<div className="container">
+					<div className="container pt-24 md:pt-40 lg:pt-0">
 						<div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
 							<div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-								<h1 className="monument xl:text-7xl">
+								<h1 className="monument text-xl xs:text-2xl md:text-4xl xl:text-7xl">
 									{props?.title}
 								</h1>
-								<p className="basecolor relative mb-8 mt-6 text-lg leading-8 sm:max-w-md lg:max-w-none">
+								<p className="basecolor relative mb-8 mt-4 text-base sm:max-w-md md:text-lg lg:mt-6 lg:max-w-none">
 									{props.description}
 								</p>
 								<Button
 									as={Link}
 									href="/contact"
-									className="group flex w-max items-center bg-white !px-12 font-semibold text-black"
+									className="group flex w-max items-center bg-white !px-4 font-semibold text-black lg:!px-12"
 								>
 									Neem contact op
 									<ArrowRightCircleIcon className="ml-4 h-6 w-6 transition group-hover:translate-x-2" />
@@ -46,6 +46,8 @@ const HeroImages = (props: any) => {
 										className="relative hover:cursor-pointer"
 									>
 										<Image
+											placeholder="blur"
+											priority
 											src={props?.images[0]?.image}
 											alt={props?.images[0]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -59,6 +61,8 @@ const HeroImages = (props: any) => {
 										className="relative hover:cursor-pointer"
 									>
 										<Image
+											placeholder="blur"
+											priority
 											src={props?.images[1]?.image}
 											alt={props?.images[1]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -70,6 +74,8 @@ const HeroImages = (props: any) => {
 										className="relative hover:cursor-pointer"
 									>
 										<Image
+											placeholder="blur"
+											priority
 											src={props?.images[2]?.image}
 											alt={props?.images[2]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -83,6 +89,8 @@ const HeroImages = (props: any) => {
 										className="relative hover:cursor-pointer"
 									>
 										<Image
+											placeholder="blur"
+											priority
 											src={props?.images[3]?.image}
 											alt={props?.images[3]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -94,6 +102,8 @@ const HeroImages = (props: any) => {
 										className="relative hover:cursor-pointer"
 									>
 										<Image
+											placeholder="blur"
+											priority
 											src={props?.images[4]?.image}
 											alt={props?.images[4]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"

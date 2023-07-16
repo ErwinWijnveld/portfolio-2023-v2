@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from '@/components/presets/Link';
 
 const navigation = {
 	solutions: [
@@ -100,7 +100,7 @@ export default function Footer() {
 	const year = new Date().getFullYear();
 	return (
 		<footer
-			className="mx-8 mt-12 rounded-t-4xl bg-zinc-900"
+			className="mt-12 bg-zinc-900 md:mx-8 md:rounded-t-4xl"
 			aria-labelledby="footer-heading"
 		>
 			<h2 id="footer-heading" className="sr-only">
@@ -136,7 +136,7 @@ export default function Footer() {
 							Freelance designer & developer. Wil jij een
 							supermoderne website laten bouwen in de regio
 							Arnhem, Nijmegen en Elst, neem dan{' '}
-							<Link href="/contact">Contact</Link> op.
+							<Link href="/contact">contact</Link> op.
 						</p>
 						<div className="flex space-x-6">
 							{navigation.social.map((item) => (

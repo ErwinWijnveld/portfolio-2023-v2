@@ -1,7 +1,7 @@
 import mockup from '@/assets/images/mockup.png';
+import Link from '@/components/presets/Link';
 import { blogs, blogsMeta } from '@/data/blogs';
 import Image from 'next/image';
-import Link from 'next/link';
 import BlogItem from './BlogItem';
 const posts = [
 	{
@@ -30,22 +30,28 @@ export default function FeaturedBlogs({ ids }: { ids: number[] }) {
 	const posts = ids.map((id) => blogs[id - 1]);
 	return (
 		<div className="py-24 sm:py-32">
-			<div className="mx-auto max-w-7xl px-6 lg:px-8">
-				<div className="mx-auto max-w-2xl text-center">
+			<div className="overflow-hidden">
+				<div className="mx-auto max-w-2xl px-4 text-center">
 					<p className="inline bg-gradient-to-r from-[#FF29A8] to-[#FFBB00] bg-clip-text text-lg font-semibold text-transparent">
 						Blog
 					</p>
 					<h2 className="mt-2 ">Uitgelichte blogartikelen</h2>
-					<p className="basecolor mt-2 text-lg leading-8">
+					<p className="basecolor mt-2 md:text-lg ">
 						Op mijn blog schrijf ik over de nieuwste technologieën,
 						frameworks en tools die ik gebruik. Ook schrijf ik over
 						mijn ervaringen met het opzetten van een eigen bedrijf.
 					</p>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-					{posts.map((post, index) => (
-						<BlogItem {...post} key={index} />
-					))}
+				<div className=" overflow-scroll">
+					<div className="container mx-auto mt-16 grid min-w-max grid-cols-3 gap-x-4 gap-y-20 md:gap-x-8 lg:min-w-0">
+						{posts.map((post, index) => (
+							<BlogItem
+								className="w-[240px] xs:w-[320px] sm:w-[350px] lg:w-auto"
+								{...post}
+								key={index}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 		</div>

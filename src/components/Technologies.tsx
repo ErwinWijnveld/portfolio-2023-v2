@@ -4,8 +4,8 @@ import nodejsIcon from '@/assets/images/nodejs.png';
 import reactIcon from '@/assets/images/react.png';
 import strapiIcon from '@/assets/images/strapi.png';
 import wordpressIcon from '@/assets/images/wordpress.png';
+import Link from '@/components/presets/Link';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Technologies = () => {
 	return (
@@ -18,6 +18,7 @@ const Technologies = () => {
 						alt="Reactjs icoon wit"
 						width={158}
 						height={48}
+						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
@@ -25,6 +26,7 @@ const Technologies = () => {
 						alt="Laravel icoon wit"
 						width={158}
 						height={48}
+						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
@@ -32,6 +34,7 @@ const Technologies = () => {
 						alt="Wordpress icoon wit"
 						width={158}
 						height={48}
+						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
@@ -39,6 +42,7 @@ const Technologies = () => {
 						alt="Figma icoon wit"
 						width={158}
 						height={48}
+						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 col-start-2 max-h-12 w-full translate-y-2 object-contain sm:col-start-auto lg:col-span-1"
@@ -46,6 +50,7 @@ const Technologies = () => {
 						alt="Strapi icoon wit"
 						width={158}
 						height={48}
+						placeholder="blur"
 					/>
 				</div>
 				<div className="mt-16 flex justify-center">

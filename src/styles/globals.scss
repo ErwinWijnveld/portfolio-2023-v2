@@ -9,14 +9,15 @@
 body {
   @apply bg-black text-white;
 }
-html, * {
+
+* {
   font-family: var(--font-poppins);
 }
+
 
 h1, h2, h3, h4, h5 {
   @apply font-semibold;
 }
-
 
 
 h1 {
@@ -67,9 +68,8 @@ p a {
 }
 
 .nospline {
-  clip-path: polygon(100% 0, 100% 84%, 75% 100%, 0 100%, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
 }
-
 @layer {
   .gradient-text {
     @apply inline bg-gradient-to-r from-[#00F3F9] via-[#FF29A8] to-[#FFBB00] bg-clip-text text-lg text-transparent;
@@ -155,4 +155,26 @@ p a {
     @apply text-lg sm:text-xl md:text-2xl;
   }
   
+}
+
+.stylemailchimp {
+  &>div {
+    @apply mx-auto mt-10 flex max-w-md gap-4 flex-wrap;
+
+    &>div:not([data-lastpass-icon-root]) {
+      @apply w-full bg-white rounded-lg p-2 text-center;
+    }
+  }
+  input {
+    @apply min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6;
+  }
+  button {
+    @apply flex-none mx-auto rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white;
+  }
+}
+
+.activeheader {
+  @media (max-width: 768px) {
+    @apply bg-zinc-900/40 backdrop-blur-sm;
+  }
 }

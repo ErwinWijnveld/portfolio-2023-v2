@@ -11,6 +11,7 @@ const ImageModal = ({ setOpenedImage, image }: any) => {
 					src={image?.image}
 					alt={image?.alt}
 					className="absolute inset-0 h-full w-full object-contain p-[5%]"
+					placeholder="blur"
 				/>
 			</div>
 		</div>

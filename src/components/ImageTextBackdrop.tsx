@@ -1,6 +1,6 @@
+import Link from '@/components/presets/Link';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const ImageTextBackdrop = ({ rtl, image, alt, title, text, cta }: any) => {
 	return (
@@ -11,6 +11,7 @@ const ImageTextBackdrop = ({ rtl, image, alt, title, text, cta }: any) => {
 						src={image}
 						alt={alt}
 						className="h-full w-full overflow-hidden rounded-[2rem] object-cover  ring-1 ring-zinc-100/20"
+						placeholder="blur"
 					/>
 				</div>
 				<div className={'grow ' + (rtl ? '' : '-order-1 lg:pl-24')}>

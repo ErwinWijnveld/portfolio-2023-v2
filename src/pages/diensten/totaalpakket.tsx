@@ -1,3 +1,4 @@
+import BackgroundGradientMobile from '@/components/BackgroundGradientMobile';
 import FeaturedBlogs from '@/components/FeaturedBlogs';
 import FullScreenGradient from '@/components/FullScreenGradient';
 import HeroMockup from '@/components/HeroMockup';
@@ -25,9 +26,13 @@ const Totaalpakket = () => {
 					href: '/contact',
 				}}
 			>
-				<FullScreenGradient />
+				<FullScreenGradient className="hidden md:block" />
+				<BackgroundGradientMobile
+					className="absolute right-0 top-0 z-10 h-full w-full md:hidden"
+					preserveAspectRatio="xMidYMid slice"
+				/>
 			</HeroMockup>
-			<div className="py-6 md:py-20"></div>
+			<div className="py-12 md:py-20"></div>
 			<Technologies />
 
 			<Steps />

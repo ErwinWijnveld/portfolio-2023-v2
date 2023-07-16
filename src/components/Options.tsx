@@ -1,5 +1,5 @@
+import Link from '@/components/presets/Link';
 import { CheckIcon } from '@heroicons/react/20/solid';
-import Link from 'next/link';
 
 const tiers = [
 	{
@@ -66,7 +66,7 @@ export default function Options() {
 				aria-hidden="true"
 			>
 				<div
-					className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-brown-light to-primary-light/70 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+					className="from-brown-light to-primary-light/70 relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
 					style={{
 						clipPath:
 							'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',
@@ -75,15 +75,15 @@ export default function Options() {
 			</div>
 			<div className="mx-auto max-w-7xl px-6 lg:px-8">
 				<div className="mx-auto max-w-4xl text-center">
-					<h2 className="text-base font-semibold leading-7 text-primary">
+					<h2 className="text-primary text-base font-semibold leading-7">
 						Diensten
 					</h2>
-					<p className="mt-2 text-4xl font-bold tracking-tight text-primary-light sm:text-5xl">
+					<p className="text-primary-light mt-2 text-4xl font-bold tracking-tight sm:text-5xl">
 						Expertise in Webdesign, Appdesign, Ontwikkeling en
 						Optimalisatie
 					</p>
 				</div>
-				<p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-primary-light/75">
+				<p className="text-primary-light/75 mx-auto mt-6 max-w-2xl text-center text-lg leading-8">
 					Professionele diensten voor webdesign, appdesign, web- en
 					appontwikkeling, en optimalisatie. Vind het juiste plan voor
 					uw bedrijf.
@@ -98,10 +98,10 @@ export default function Options() {
 									? 'bg-primary-light lg:z-10 lg:rounded-b-none'
 									: 'lg:mt-8',
 								tierIdx === 0
-									? 'border-r-0 bg-primary lg:rounded-r-none'
+									? 'bg-primary border-r-0 lg:rounded-r-none'
 									: '',
 								tierIdx === tiers.length - 1
-									? 'border-l-0 bg-brown-light lg:rounded-l-none'
+									? 'bg-brown-light border-l-0 lg:rounded-l-none'
 									: '',
 								'flex flex-col justify-between rounded-3xl  p-8 xl:p-10'
 							)}
@@ -120,7 +120,7 @@ export default function Options() {
 										{tier.name}
 									</h3>
 									{tier.mostPopular ? (
-										<p className="rounded-full bg-brown/10 px-2.5 py-1 text-xs font-semibold leading-5 text-brown  ">
+										<p className="bg-brown/10 text-brown rounded-full px-2.5 py-1 text-xs font-semibold leading-5  ">
 											Meest populair
 										</p>
 									) : null}
@@ -154,8 +154,8 @@ export default function Options() {
 								aria-describedby={tier.id}
 								className={classNames(
 									tier.mostPopular
-										? 'bg-brown-light text-brown-dark shadow-sm hover:bg-brown'
-										: '  ring-2 ring-inset ring-brown-dark hover:ring-brown',
+										? 'bg-brown-light text-brown-dark hover:bg-brown shadow-sm'
+										: '  ring-brown-dark hover:ring-brown ring-2 ring-inset',
 									'mt-8 block rounded-4xl px-3 py-2 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
 								)}
 							>
@@ -170,7 +170,7 @@ export default function Options() {
 				aria-hidden="true"
 			>
 				<div
-					className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-primary-light to-primary-dark opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+					className="from-primary-light to-primary-dark relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
 					style={{
 						clipPath:
 							'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)',

@@ -1,6 +1,8 @@
 import wpgradient from '@/assets/images/landingpages/wpgradient.png';
 import ContentImageRight from '@/components/ContentImageRight';
+import FAQ from '@/components/FAQ';
 import Layout from '@/components/Layout';
+import Newsletter from '@/components/Newsletter';
 
 const page = {
 	title: 'Goedkope website laten maken: Uw Expert Freelance Webdesigner & Developer',
@@ -37,12 +39,14 @@ const WebsiteLatenMakenArnhem = () => {
 						href: '/',
 					},
 					{
-						title: 'Website laten maken Arnhem',
-						href: '/website-laten-maken-arnhem',
+						title: 'Goedkope website laten maken',
+						href: '/goedkope-website-laten-maken',
 					},
 				]}
 				{...page}
 			/>
+			<FAQ ids={[33, 34, 35, 36]} />
+			<Newsletter />
 		</Layout>
 	);
 };

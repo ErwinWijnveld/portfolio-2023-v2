@@ -2,12 +2,14 @@ import code from '@/assets/images/screens/Code.png';
 import figma from '@/assets/images/screens/Figma.png';
 import optimization from '@/assets/images/screens/optimization.png';
 import BackgroundGradient from '@/components/BackgroundGradient';
+import BackgroundGradientMobile from '@/components/BackgroundGradientMobile';
 import FAQ from '@/components/FAQ';
 import FeaturedBlogs from '@/components/FeaturedBlogs';
 import HeroMockup from '@/components/HeroMockup';
 import ImageTextBackdrop from '@/components/ImageTextBackdrop';
 import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
+import RotatingReadMore from '@/components/RotatingReadMore';
 import Technologies from '@/components/Technologies';
 import Usps from '@/components/Usps';
 
@@ -24,30 +26,37 @@ export default function Home() {
 				type="module"
 				src="https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js"
 			></script>
-			<div className="nospline pointer-events-none fixed inset-0 -z-10 h-screen w-screen">
+			<div className="nospline pointer-events-none fixed inset-0 -z-10 h-screen w-screen overflow-hidden">
 				{/* @ts-ignore */}
 				<spline-viewer
-					class="h-screen w-screen"
+					class="h-full w-full"
 					url="https://prod.spline.design/tFwGilj7o1vRHEUS/scene.splinecode"
 					// @ts-ignore
 				></spline-viewer>
 			</div>
-			<HeroMockup
-				title='Jouw <span class="gradient-text transition-colors duration-500">droomwebsite</span> laten maken'
-				description="Wil je een website laten maken in de regio Arnhem, Nijmegen, Elst en omstreken om
-						een krachtige online aanwezigheid op te bouwen? Ik ben een ervaren freelance webdesigner & developer, bij mij kun
-						je terecht om een moderne en gebruiksvriendelijke website te laten maken die perfect aansluit bij jouw
-						wensen."
-				cta={{
-					title: 'Bekijk projecten',
-					href: '/projecten',
-				}}
-			>
-				<BackgroundGradient
-					className="absolute right-0 top-0 z-10 h-full w-full translate-x-24"
-					preserveAspectRatio="xMidYMid slice"
-				/>
-			</HeroMockup>
+			<div className="relative overflow-x-clip">
+				<HeroMockup
+					title='Jouw <span class="gradient-text transition-colors duration-500">droomwebsite</span> laten maken'
+					description="Wil je een website laten maken in de regio Arnhem, Nijmegen, Elst en omstreken om
+							een krachtige online aanwezigheid op te bouwen? Ik ben een ervaren freelance webdesigner & developer, bij mij kun
+							je terecht om een moderne en gebruiksvriendelijke website te laten maken die perfect aansluit bij jouw
+							wensen."
+					cta={{
+						title: 'Bekijk projecten',
+						href: '/projecten',
+					}}
+				>
+					<BackgroundGradient
+						className="absolute right-0 top-0 z-10 hidden h-full w-full translate-x-24 md:block"
+						preserveAspectRatio="xMidYMid slice"
+					/>
+					<BackgroundGradientMobile
+						className="absolute right-0 top-0 z-10 h-full w-full md:hidden"
+						preserveAspectRatio="xMidYMid slice"
+					/>
+				</HeroMockup>
+				<RotatingReadMore className="absolute -bottom-20 -right-20 z-30 md:bottom-0 md:hidden" />
+			</div>
 			<Usps />
 			{/* <Testimonial /> */}
 			<Technologies />
@@ -62,6 +71,7 @@ export default function Home() {
 					title: 'Lees meer',
 					href: '/diensten/webdesign',
 				}}
+				placeholder="blur"
 			/>
 			<ImageTextBackdrop
 				image={code}
@@ -72,6 +82,7 @@ export default function Home() {
 					title: 'Lees meer',
 					href: '/diensten/webontwikkeling',
 				}}
+				placeholder="blur"
 			/>
 
 			<ImageTextBackdrop
@@ -84,6 +95,7 @@ export default function Home() {
 					title: 'Lees meer',
 					href: '/diensten/optimalisatie',
 				}}
+				placeholder="blur"
 			/>
 			<div className="py-6 md:py-12"></div>
 

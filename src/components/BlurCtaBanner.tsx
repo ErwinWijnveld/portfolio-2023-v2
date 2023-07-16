@@ -1,8 +1,8 @@
 import erwinguus from '@/assets/images/erwinguus.jpg';
+import Link from '@/components/presets/Link';
 import { CheckCircleIcon } from '@heroicons/react/20/solid';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import Link from 'next/link';
 import BackgroundGradient from './BackgroundGradient';
 import BlueFullscreenGradient from './BlueFullscreenGradient';
 import Button from './Button';
@@ -20,7 +20,7 @@ const benefits = [
 ];
 const BlurCtaBanner = () => {
 	return (
-		<div className="relative isolate py-10 lg:h-screen lg:min-h-[600px] lg:py-24">
+		<div className="relative isolate py-20 md:py-10 lg:h-screen lg:min-h-[600px] lg:py-24">
 			<GreenFullscreenGradient className="-z-10 opacity-50" />
 			<div className="mx-auto h-full max-w-7xl px-4 sm:px-6 lg:px-8">
 				<div className="mx-auto flex h-full max-w-2xl flex-col gap-8 rounded-4xl bg-white/5 p-4 px-4 ring-1 ring-slate-500/30 backdrop-blur-xl sm:p-8 sm:px-6 sm:py-6  md:gap-16 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-16 xl:gap-x-20 xl:px-16">
@@ -28,6 +28,8 @@ const BlurCtaBanner = () => {
 						className="h-80 w-full flex-none rounded-2xl object-cover shadow-xl sm:h-96 lg:aspect-square lg:h-auto lg:max-w-sm"
 						src={erwinguus}
 						alt="Erwin met een hond"
+						placeholder="blur"
+						priority
 					/>
 					<div className="w-full flex-auto">
 						<h2 className="text-primary-light text-3xl   tracking-tight sm:text-4xl">

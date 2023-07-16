@@ -1,6 +1,8 @@
 import nijmegen from '@/assets/images/landingpages/nijmegen.jpg';
 import ContentImageRight from '@/components/ContentImageRight';
+import FAQ from '@/components/FAQ';
 import Layout from '@/components/Layout';
+import Newsletter from '@/components/Newsletter';
 
 const page = {
 	title: 'Website laten maken Nijmegen: Uw Expert Freelance Webdesigner & Developer',
@@ -44,6 +46,8 @@ const WebsiteLatenMakenNijmegen = () => {
 				]}
 				{...page}
 			/>
+			<FAQ ids={[26, 27, 28, 29]} />
+			<Newsletter />
 		</Layout>
 	);
 };

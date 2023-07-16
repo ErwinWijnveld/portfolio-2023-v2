@@ -1,6 +1,7 @@
 import { faqs } from '@/data/faqs';
 import { Disclosure } from '@headlessui/react';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline';
+import Head from 'next/head';
 import LeftOrangeGradient from './LeftOrangeGradient';
 
 export default function FAQ({ ids }: { ids?: number[] }) {
@@ -9,8 +10,38 @@ export default function FAQ({ ids }: { ids?: number[] }) {
 		posts = ids.map((id) => faqs[id - 1]);
 	}
 
+	// faq in json serp format sting
+	// {
+	//     "@type": "Question",
+	//     "name": "How long does it take to process a refund?",
+	//     "acceptedAnswer": {
+	//       "@type": "Answer",
+	//       "text": "We will reimburse you for returned items in the same way you paid for them. For example, any amounts deducted from a gift card will be credited back to a gift card. For returns by mail, once we receive your return, we will process it within 4–5 business days. It may take up to 7 days after we process the return to reflect in your account, depending on your financial institution's processing time."
+	//     }
+	//   }
+
+	const jsonString = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'FAQPage',
+		mainEntity: faqs.map((faq) => ({
+			'@type': 'Question',
+			name: faq.question,
+			acceptedAnswer: {
+				'@type': 'Answer',
+				text: faq.answer,
+			},
+		})),
+	});
+
 	return (
 		<div className="relative overflow-x-clip">
+			{/* faq in serps  */}
+			<Head>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: jsonString }}
+				/>
+			</Head>
 			<LeftOrangeGradient />
 			<div className="container relative z-10 py-12 sm:py-20 lg:py-24">
 				<div className="mx-auto max-w-4xl divide-y divide-white/10">
@@ -26,7 +57,7 @@ export default function FAQ({ ids }: { ids?: number[] }) {
 									<>
 										<dt>
 											<Disclosure.Button className="flex w-full items-start justify-between text-left text-white">
-												<span className="text-base font-semibold leading-7">
+												<span className="text-sm font-semibold leading-7 xs:text-base">
 													{faq.question}
 												</span>
 												<span className="ml-6 flex h-7 items-center">

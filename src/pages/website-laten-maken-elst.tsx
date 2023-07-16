@@ -1,6 +1,8 @@
 import elst from '@/assets/images/landingpages/elst.jpg';
 import ContentImageRight from '@/components/ContentImageRight';
+import FAQ from '@/components/FAQ';
 import Layout from '@/components/Layout';
+import Newsletter from '@/components/Newsletter';
 
 const page = {
 	title: 'Website laten maken Elst: Uw Expert Freelance Webdesigner & Developer',
@@ -44,6 +46,8 @@ const WebsiteLatenMakenElst = () => {
 				]}
 				{...page}
 			/>
+			<FAQ ids={[30, 31, 32, 2]} />
+			<Newsletter />
 		</Layout>
 	);
 };

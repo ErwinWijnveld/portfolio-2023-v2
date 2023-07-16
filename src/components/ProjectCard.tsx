@@ -1,6 +1,6 @@
+import Link from '@/components/presets/Link';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const ProjectCard = ({ title, label, description, thumbnail, href }: any) => {
 	const Component = href ? Link : 'div';
@@ -13,7 +13,11 @@ const ProjectCard = ({ title, label, description, thumbnail, href }: any) => {
 				(href ? 'cursor-pointer' : '')
 			}
 		>
-			<Image src={thumbnail?.image} alt={thumbnail?.alt} />
+			<Image
+				src={thumbnail?.image}
+				alt={thumbnail?.alt}
+				placeholder="blur"
+			/>
 			<div
 				className={
 					'overlay absolute inset-0 flex h-full w-full flex-col justify-end bg-gradient-to-t from-zinc-900 via-zinc-900/60 to-transparent p-6 transition duration-300 group-hover:visible group-hover:opacity-100 md:p-10 lg:invisible lg:opacity-0 lg:backdrop-blur-sm ' +

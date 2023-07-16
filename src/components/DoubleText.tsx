@@ -1,5 +1,5 @@
+import Link from '@/components/presets/Link';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
-import Link from 'next/link';
 import Button from './Button';
 
 export default function DoubleText({ topTitle, title, left, right }: any) {
@@ -31,7 +31,7 @@ export default function DoubleText({ topTitle, title, left, right }: any) {
 							<Button
 								as={Link}
 								href="/contact"
-								className="group flex w-max items-center bg-white !px-12 font-semibold text-black"
+								className="group flex w-max items-center bg-white !px-4 font-semibold text-black lg:!px-12"
 							>
 								Neem contact op
 								<ArrowRightCircleIcon className="ml-4 h-6 w-6 transition group-hover:translate-x-2" />

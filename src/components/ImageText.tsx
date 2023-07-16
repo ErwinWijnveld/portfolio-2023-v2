@@ -15,6 +15,7 @@ const ImageText = ({ image, alt, content, i, length }: any) => {
 						src={image}
 						alt={alt}
 						className="object-cover"
+						placeholder="blur"
 					/>
 				</div>
 			)}

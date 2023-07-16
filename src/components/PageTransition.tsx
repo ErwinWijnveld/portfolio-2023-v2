@@ -3,52 +3,72 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { Expo, gsap } from 'gsap';
 import { usePathname } from 'next/navigation';
-import { useLayoutEffect, useRef } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
+import TransitionGradientElement from './TransitionGradientElement';
 
 const PageTransition = ({ children }: any) => {
 	const pathName = usePathname();
-	const firstUpdate = useRef(true);
+	const [firstUpdate, setfirstUpdate] = useState(true);
+
+	const transitionDuration = 0.5;
 
 	useLayoutEffect(() => {
-		if (firstUpdate.current) {
-			firstUpdate.current = false;
+		if (firstUpdate) {
+			setfirstUpdate(false);
 			return;
 		}
+
 		// exit animation
-		gsap.to('#small-cursor', 1, {
-			width: 6,
-			height: 6,
-			ease: Expo.easeInOut,
-		});
+		gsap.fromTo(
+			'#trans-gradient',
+			{
+				x: '-100%',
+			},
+			{
+				x: '-33.3333%',
+				duration: transitionDuration,
+				ease: 'linear',
+				onComplete: () => {
+					window.scrollTo(0, 0);
+				},
+			}
+		);
 	}, [pathName]);
 
 	const handleExitComplete = () => {
-		console.log('handleExitComplete');
-		window.scrollTo(0, 0);
 		// enter animation
-		gsap.to('#small-cursor', 1, {
-			width: '100vw',
-			height: '100vw',
-			ease: Expo.easeInOut,
-		});
+		gsap.fromTo(
+			'#trans-gradient',
+			{
+				x: '-33.3333%',
+			},
+			{
+				x: '40%',
+				duration: transitionDuration,
+				ease: 'linear',
+			}
+		);
 	};
 
 	return (
-		<AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
-			<motion.div
-				key={pathName}
-				transition={{
-					duration: 1,
-				}}
-				exit={{
-					x: 0,
-				}}
-				initial="initial"
-				animate="animate"
-			>
-				{children}
-			</motion.div>
-		</AnimatePresence>
+		<>
+			<TransitionGradientElement className="fixed inset-y-0 z-[1000000] h-screen w-[1200vw] -translate-x-[1200vw] md:w-[300vw] md:-translate-x-[300vw]" />
+			<AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
+				<motion.div
+					key={pathName}
+					transition={{
+						duration: transitionDuration,
+					}}
+					exit={{
+						x: 0,
+					}}
+					initial="initial"
+					animate="animate"
+				>
+					{children}
+				</motion.div>
+			</AnimatePresence>
+		</>
 	);
 };
 

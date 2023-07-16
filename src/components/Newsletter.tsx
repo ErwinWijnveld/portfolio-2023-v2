@@ -1,35 +1,24 @@
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import RightPinkGradient from './RightPinkGradient';
 
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 export default function Newsletter() {
+	const postUrl = `https://erwinwijnveld.us21.list-manage.com/subscribe/post?u=35940af532c52bb02b20641d7&id=62b12b3aac`;
+
 	return (
 		<div className="relative py-8 sm:py-12">
 			<RightPinkGradient />
 
 			<div className="container">
-				<div className="relative isolate overflow-hidden bg-zinc-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
+				<div className="relative isolate overflow-hidden rounded-3xl bg-zinc-900 px-6 py-16 shadow-2xl sm:px-24 md:py-24 xl:py-32">
 					<h2 className="mx-auto mb-3 max-w-2xl text-center">
 						Laat mij contact met je opnemen
 					</h2>
-					<p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
+					<p className="mx-auto mt-2 max-w-xl text-center text-gray-300 md:text-lg md:leading-8">
 						Laat je e-mailadres achter en ik neem zo snel mogelijk
 						contact met je op, zodat we samen je wensen kunnen
 						bespreken.
 					</p>
-					<form className="mx-auto mt-10 flex max-w-md gap-x-4">
+					{/* <form className="mx-auto mt-10 flex max-w-md gap-x-4">
 						<label htmlFor="email-address" className="sr-only">
 							Email address
 						</label>
@@ -48,7 +37,10 @@ export default function Newsletter() {
 						>
 							Verstuur
 						</button>
-					</form>
+					</form> */}
+					<div className="stylemailchimp overflow-hidden">
+						<MailchimpSubscribe url={postUrl} />
+					</div>
 					<svg
 						viewBox="0 0 1024 1024"
 						className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
@@ -70,10 +62,10 @@ export default function Newsletter() {
 								gradientUnits="userSpaceOnUse"
 								gradientTransform="translate(512 512) rotate(90) scale(512)"
 							>
-								<stop stopColor="#FFBB00" />
+								<stop stopColor="#7775D6" />
 								<stop
 									offset={1}
-									stopColor="#FF29A8"
+									stopColor="#E935C1"
 									stopOpacity={0}
 								/>
 							</radialGradient>

@@ -1,14 +1,15 @@
 'use client';
 
 import mockup from '@/assets/images/mockup.png';
+import Link from '@/components/presets/Link';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import { gsap } from 'gsap';
 import Image from 'next/image';
-import Link from 'next/link';
 import { title } from 'process';
 import { useEffect, useRef } from 'react';
 import BackgroundGradient from './BackgroundGradient';
 import Button from './Button';
+import RotatingReadMore from './RotatingReadMore';
 
 const HeroMockup = ({ children, title, description, cta }: any) => {
 	const blurRef = useRef<HTMLDivElement>(null);
@@ -46,16 +47,16 @@ const HeroMockup = ({ children, title, description, cta }: any) => {
 
 	return (
 		<section
-			className="text-primary-light relative flex h-screen max-h-[900px] min-h-[650px] items-center overflow-x-clip bg-black md:py-12"
+			className="text-primary-light relative flex h-screen max-h-[900px] min-h-[700px] items-end overflow-hidden bg-black md:py-12 lg:min-h-[650px] lg:items-center"
 			ref={wrapRef}
 		>
 			{/* bg gradient */}
 			{children}
 
 			<div className="container relative z-20 flex max-w-7xl items-center justify-between px-6">
-				<div className="relative z-10 translate-y-4">
+				<div className="relative z-10 pb-28 lg:translate-y-4 lg:pb-0">
 					<h1
-						className="monument mb-4 max-w-3xl text-5xl uppercase xl:text-6xl"
+						className="monument mb-4 max-w-3xl text-[8vw] uppercase leading-[1.1] md:text-5xl  xl:text-6xl"
 						dangerouslySetInnerHTML={{ __html: title }}
 					></h1>
 					<p
@@ -66,7 +67,7 @@ const HeroMockup = ({ children, title, description, cta }: any) => {
 						<Button
 							as={Link}
 							href={cta.href}
-							className="bg-primary-light text-brown-dark group flex w-max items-center !px-12 font-semibold"
+							className="bg-primary-light text-brown-dark group flex w-max items-center !px-4 font-semibold lg:!px-12"
 						>
 							{cta?.title}
 							<ArrowRightCircleIcon className="ml-4 h-6 w-6 transition group-hover:translate-x-2" />
@@ -75,53 +76,14 @@ const HeroMockup = ({ children, title, description, cta }: any) => {
 				</div>
 				<Image
 					ref={imageRef}
-					className="absolute right-0 top-1/2 w-1/2 origin-right -translate-y-1/2 scale-90 "
+					className="absolute right-0 top-1/2 hidden w-1/2 origin-right -translate-y-1/2 scale-90 lg:block "
 					src={mockup}
 					alt="mockup"
 					priority
 					placeholder="blur"
 				/>
 			</div>
-			<a
-				onClick={(e) => {
-					e.preventDefault();
-					window.scrollTo({
-						top: window.innerHeight,
-						behavior: 'smooth',
-					});
-				}}
-				className="monument absolute bottom-0 right-0 z-30 cursor-pointer opacity-100 transition duration-700 ease-out hover:scale-125 hover:opacity-100"
-			>
-				<svg
-					width="200"
-					height="200"
-					className="animate-spin-slower cursor-pointer "
-				>
-					<path
-						id="circlePath"
-						d="M100,100 m-50,0a50,50 0 1,0 100,0a50,50 0 1,0 -100,0"
-						fill="transparent"
-						className=" cursor-pointer"
-					/>
-					<text
-						fill="#ffffff"
-						style={{
-							// uppercase
-							textTransform: 'uppercase',
-							letterSpacing: '0.52em',
-							// small text
-							fontSize: '0.63rem',
-							// mirror text
-							// textAnchor: 'middle',
-						}}
-						className=" cursor-pointer"
-					>
-						<textPath href="#circlePath">
-							Lees meer&nbsp;●&nbsp;Lees meer&nbsp;●&nbsp;
-						</textPath>
-					</text>
-				</svg>
-			</a>
+			<RotatingReadMore className="absolute bottom-0 right-0 z-30 hidden md:bottom-0 md:block" />
 		</section>
 	);
 };
