@@ -12,6 +12,7 @@ import Newsletter from '@/components/Newsletter';
 import RotatingReadMore from '@/components/RotatingReadMore';
 import Technologies from '@/components/Technologies';
 import Usps from '@/components/Usps';
+import Script from 'next/script';
 
 export default function Home() {
 	return (
@@ -22,10 +23,12 @@ export default function Home() {
 					'Freelance designer & developer in de regio Arnhem, Nijmegen en Elst. Wil jij een supermoderne website laten maken om online op te vallen? Dan ben je aan het juiste adres.',
 			}}
 		>
-			<script
+			<Script
+				id="spline"
+				strategy="afterInteractive"
 				type="module"
 				src="https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js"
-			></script>
+			></Script>
 			<div className="nospline pointer-events-none fixed inset-0 -z-10 h-screen w-screen overflow-hidden">
 				{/* @ts-ignore */}
 				<spline-viewer
