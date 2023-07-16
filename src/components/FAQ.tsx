@@ -8,6 +8,8 @@ export default function FAQ({ ids }: { ids?: number[] }) {
 	let posts = faqs;
 	if (ids) {
 		posts = ids.map((id) => faqs[id - 1]);
+	} else {
+		posts = faqs.slice(0, 5);
 	}
 
 	// faq in json serp format sting
@@ -23,7 +25,7 @@ export default function FAQ({ ids }: { ids?: number[] }) {
 	const jsonString = JSON.stringify({
 		'@context': 'https://schema.org',
 		'@type': 'FAQPage',
-		mainEntity: faqs.map((faq) => ({
+		mainEntity: posts.map((faq) => ({
 			'@type': 'Question',
 			name: faq.question,
 			acceptedAnswer: {

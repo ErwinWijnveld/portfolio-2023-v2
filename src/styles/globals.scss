@@ -178,3 +178,7 @@ p a {
     @apply bg-zinc-900/40 backdrop-blur-sm;
   }
 }
+
+img {
+  @apply transition;
+}

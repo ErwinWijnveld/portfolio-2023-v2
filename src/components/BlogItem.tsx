@@ -21,7 +21,7 @@ const BlogItem = (post: any) => {
 				<div className="relative w-full">
 					<Image
 						src={post?.thumbnail?.image || mockup}
-						alt={post?.thumbnail?.image || 'blogafbeelding'}
+						alt={post?.thumbnail?.alt || 'blogafbeelding'}
 						placeholder="blur"
 						className={
 							'aspect-[16/9] w-full rounded-xl bg-zinc-600/50 object-cover backdrop-blur-xl sm:aspect-[2/1] md:rounded-2xl lg:aspect-[3/2] ' +
