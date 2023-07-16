@@ -1,3 +1,4 @@
+import homegradient from '@/assets/images/homegradient.png';
 import code from '@/assets/images/screens/Code.png';
 import figma from '@/assets/images/screens/Figma.png';
 import optimization from '@/assets/images/screens/optimization.png';
@@ -12,6 +13,7 @@ import Newsletter from '@/components/Newsletter';
 import RotatingReadMore from '@/components/RotatingReadMore';
 import Technologies from '@/components/Technologies';
 import Usps from '@/components/Usps';
+import Image from 'next/image';
 import Script from 'next/script';
 
 export default function Home() {
@@ -53,9 +55,15 @@ export default function Home() {
 						className="absolute right-0 top-0 z-10 hidden h-full w-full translate-x-24 md:block"
 						preserveAspectRatio="xMidYMid slice"
 					/>
-					<BackgroundGradientMobile
+					{/* <BackgroundGradientMobile
 						className="absolute right-0 top-0 z-10 h-full w-full md:hidden"
 						preserveAspectRatio="xMidYMid slice"
+					/> */}
+					<Image
+						src={homegradient}
+						alt="webdesign gradient"
+						className="absolute right-0 top-0 z-10 h-full w-full object-cover md:hidden"
+						priority
 					/>
 				</HeroMockup>
 				<RotatingReadMore className="absolute -bottom-20 -right-20 z-30 md:bottom-0 md:hidden" />
