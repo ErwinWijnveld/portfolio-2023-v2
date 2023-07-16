@@ -6,13 +6,13 @@ import Meta from './Meta';
 
 const Layout = ({ children, meta, ...rest }: any) => {
 	return (
-		<ReactLenis root {...rest}>
+		<div root {...rest}>
 			<Meta {...meta} />
 			<HeaderNew />
 			<CustomCursor />
 			<main>{children}</main>
 			<Footer />
-		</ReactLenis>
+		</div>
 	);
 };
 export default Layout;

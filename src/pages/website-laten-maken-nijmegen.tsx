@@ -29,8 +29,9 @@ const WebsiteLatenMakenNijmegen = () => {
 		<Layout
 			meta={{
 				...page?.meta,
-				seo_image:
-					'https://erwinwijnveld.nl' + page?.thumbnail?.image?.src,
+				seo_image: page?.thumbnail?.image?.src
+					? 'https://erwinwijnveld.nl' + page?.thumbnail?.image?.src
+					: undefined,
 			}}
 		>
 			<ContentImageRight

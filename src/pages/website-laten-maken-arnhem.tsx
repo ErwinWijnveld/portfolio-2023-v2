@@ -29,11 +29,12 @@ const WebsiteLatenMakenArnhem = () => {
 		<Layout
 			meta={{
 				...page?.meta,
-				seo_image:
-					'https://erwinwijnveld.nl' + page?.thumbnail?.image?.src,
+				seo_image: page?.thumbnail?.image?.src
+					? 'https://erwinwijnveld.nl' + page?.thumbnail?.image?.src
+					: undefined,
 			}}
 		>
-			<ContentImageRightCopy
+			<ContentImageRight
 				breadcrumbs={[
 					{
 						title: 'Erwin Wijnveld',
@@ -46,7 +47,7 @@ const WebsiteLatenMakenArnhem = () => {
 				]}
 				{...page}
 			/>
-			<FAQ ids={[8, 9, 10, 11]} />
+			<FAQ ids={[30, 31, 32, 2]} />
 			<Newsletter />
 		</Layout>
 	);

@@ -25,14 +25,16 @@ export default function FAQ({ ids }: { ids?: number[] }) {
 	const jsonString = JSON.stringify({
 		'@context': 'https://schema.org',
 		'@type': 'FAQPage',
-		mainEntity: posts.map((faq) => ({
-			'@type': 'Question',
-			name: faq.question,
-			acceptedAnswer: {
-				'@type': 'Answer',
-				text: faq.answer,
-			},
-		})),
+		mainEntity: [
+			...posts.map((post) => ({
+				'@type': 'Question',
+				name: post.question,
+				acceptedAnswer: {
+					'@type': 'Answer',
+					text: post.answer,
+				},
+			})),
+		],
 	});
 
 	return (
