@@ -1,3 +1,4 @@
+import leftblue from '@/assets/images/gradients/leftblue.png';
 import {
 	ArrowPathIcon,
 	CloudArrowUpIcon,
@@ -9,6 +10,7 @@ import {
 	ShieldCheckIcon,
 	WrenchScrewdriverIcon,
 } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 const features = [
 	{
@@ -58,7 +60,7 @@ export default function Usps() {
 				viewBox="0 0 876 1502"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
-				className="absolute left-0 top-0 -z-10 h-[200%] -translate-x-1/2 -translate-y-1/3"
+				className="absolute left-0 top-0 -z-10 hidden h-[200%] -translate-x-1/2 -translate-y-1/3 md:block"
 				preserveAspectRatio="xMidYMid meet"
 			>
 				<g filter="url(#filter0_f_1_3)">
@@ -166,7 +168,14 @@ export default function Usps() {
 					</filter>
 				</defs>
 			</svg>
-
+			<Image
+				src={leftblue}
+				alt="webdesign, website laten maken blauwe gradient professioneel"
+				className={
+					'absolute left-0 -z-20 block object-cover md:hidden '
+				}
+				priority
+			/>
 			<div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
 				<p className="inline bg-gradient-to-r from-[#00F3F9] via-[#FF29A8] to-[#FFBB00] bg-clip-text text-lg font-semibold text-transparent">
 					Compleet op het web

@@ -15,7 +15,7 @@ export default function ContentImageRightCopy({
 	breadcrumbs,
 }: any) {
 	return (
-		<>
+		<section className="overflow-x-clip">
 			<div className="relative isolate overflow-hidden px-6 pb-24 pt-40 sm:py-32 lg:overflow-visible lg:px-0">
 				<LeftBlueGradient />
 				<div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
@@ -48,7 +48,7 @@ export default function ContentImageRightCopy({
 					</div>
 					<div className="-mt-12 sm:-ml-12 sm:p-12 lg:sticky lg:top-14 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
 						<Image
-							className={`h-[500px] w-full max-w-none overflow-hidden rounded-xl bg-zinc-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] ${
+							className={`aspect-[3/2] w-full max-w-none overflow-hidden rounded-xl bg-zinc-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:aspect-auto md:h-[500px] ${
 								thumbnail?.image
 									? 'object-cover'
 									: 'object-contain'
@@ -69,6 +69,6 @@ export default function ContentImageRightCopy({
 					</div>
 				</div>
 			</div>
-		</>
+		</section>
 	);
 }
