@@ -15,9 +15,9 @@ import Usps from '@/components/Usps';
 import dynamic from 'next/dynamic';
 import Image from 'next/image';
 
-const DynamicTrhee = dynamic(() => import('../components/ThreeDElement'), {
-	loading: () => <></>,
-});
+// const DynamicTrhee = dynamic(() => import('../components/ThreeDElement'), {
+// 	loading: () => <></>,
+// });
 
 export default function Home() {
 	return (
@@ -29,7 +29,7 @@ export default function Home() {
 			}}
 		>
 			{/* <SplineThree /> */}
-			<DynamicTrhee />
+			{/* <DynamicTrhee /> */}
 			<div className="relative overflow-x-clip">
 				<HeroMockup
 					title='Jouw <span class="gradient-text transition-colors duration-500">droomwebsite</span> laten maken'

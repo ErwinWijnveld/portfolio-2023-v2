@@ -18,9 +18,9 @@ const monumentextended = localFont({
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<div className={poppins.variable + ' ' + monumentextended.variable}>
-			<PageTransition>
-				<Component {...pageProps} />
-			</PageTransition>
+			{/* <PageTransition> */}
+			<Component {...pageProps} />
+			{/* </PageTransition> */}
 		</div>
 	);
 }
