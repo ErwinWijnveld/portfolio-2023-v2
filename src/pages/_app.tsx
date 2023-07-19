@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 const monumentextended = localFont({
-	src: '../assets/fonts/MonumentExtended-Regular.woff2',
+	src: '../../public/fonts/MonumentExtended-Regular.woff2',
 	variable: '--font-monumentextended',
 });
 
