@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { usePathname } from 'next/navigation';
-import { useEffect, useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import TransitionGradientElement from './TransitionGradientElement';
 
 const PageTransition = ({ children }: any) => {

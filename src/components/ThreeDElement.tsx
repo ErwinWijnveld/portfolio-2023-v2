@@ -3,7 +3,7 @@ import { useLenis } from '@studio-freight/react-lenis';
 import { useState } from 'react';
 import { Model } from './Model';
 
-const ThreeDElement = () => {
+export default function ThreeDElement() {
 	const [rotation, setRotation] = useState(0);
 
 	useLenis(({ scroll }: any) => {
@@ -24,5 +24,4 @@ const ThreeDElement = () => {
 			</Canvas>
 		</div>
 	);
-};
-export default ThreeDElement;
+}

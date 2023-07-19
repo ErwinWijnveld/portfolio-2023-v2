@@ -11,9 +11,13 @@ import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
 import RotatingReadMore from '@/components/RotatingReadMore';
 import Technologies from '@/components/Technologies';
-import ThreeDElement from '@/components/ThreeDElement';
 import Usps from '@/components/Usps';
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
+
+const DynamicTrhee = dynamic(() => import('../components/ThreeDElement'), {
+	loading: () => <></>,
+});
 
 export default function Home() {
 	return (
@@ -25,7 +29,7 @@ export default function Home() {
 			}}
 		>
 			{/* <SplineThree /> */}
-			<ThreeDElement />
+			<DynamicTrhee />
 			<div className="relative overflow-x-clip">
 				<HeroMockup
 					title='Jouw <span class="gradient-text transition-colors duration-500">droomwebsite</span> laten maken'
