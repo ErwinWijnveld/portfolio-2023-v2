@@ -1,10 +1,10 @@
-import { PerspectiveCamera, useGLTF, useTexture } from '@react-three/drei';
-import { useLenis } from '@studio-freight/react-lenis';
-import React, { useRef, useState } from 'react';
+import { useGLTF, useTexture } from '@react-three/drei';
+import React, { useEffect, useState } from 'react';
 
 export function Model(props: any) {
 	const { nodes } = useGLTF('/logo_animatie.gltf') as any;
-	const matcap = useTexture('/matcap.png');
+	const matcap = useTexture('/test.png');
+	const [scale, setScale] = useState(0.8);
 
 	const glassyMaterialProps = {
 		reflectivity: 1.0, // Increase reflectivity for a glassy look (0.0 to 1.0)
@@ -13,8 +13,17 @@ export function Model(props: any) {
 		// side: THREE.DoubleSide, // Render both sides of the mesh for glass transparency
 	};
 
+	useEffect(() => {
+		// get screen width
+		const width = window.innerWidth;
+
+		if (width < 768) {
+			setScale(0.55);
+		}
+	}, []);
+
 	return (
-		<group {...props} position={[0, 0, 0]} scale={0.8} dispose={null}>
+		<group {...props} position={[0, 0, 0]} scale={scale} dispose={null}>
 			<group scale={0.01}>
 				<group scale={1.269}>
 					<group rotation={[0.561, 0.308, 0]}>
