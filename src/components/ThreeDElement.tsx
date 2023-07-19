@@ -12,7 +12,10 @@ const ThreeDElement = () => {
 		setRotation(scroll / -1000);
 	});
 	return (
-		<div id="model" className="fixed inset-0 -z-10 h-screen w-screen">
+		<div
+			id="model"
+			className="fixed inset-x-0 top-0 -z-10 h-screen max-h-[900px] w-screen"
+		>
 			<Canvas>
 				<ambientLight intensity={0.5} />
 				<spotLight position={[50, 50, 50]} angle={0.15} penumbra={1} />

@@ -56,7 +56,6 @@ export default function ContentImageRightCopy({
 							alt={thumbnail?.alt}
 							src={thumbnail?.image || mockup}
 							placeholder="blur"
-							priority
 						/>
 					</div>
 					<div className="[&_p]:basecolor lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 [&_p]:mb-8">

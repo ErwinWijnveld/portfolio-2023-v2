@@ -13,7 +13,7 @@ const LeftOrangeGradient = () => {
 				className="pointer-events-none absolute left-0 -z-10 hidden -translate-x-40 md:block"
 				preserveAspectRatio="xMidYMid meet"
 			>
-				<g clip-path="url(#clip0_307_7)">
+				<g clipPath="url(#clip0_307_7)">
 					<g filter="url(#filter0_f_307_7)">
 						<ellipse
 							cx="-284"
@@ -42,12 +42,9 @@ const LeftOrangeGradient = () => {
 						width="1744"
 						height="1234"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -66,12 +63,9 @@ const LeftOrangeGradient = () => {
 						width="983.166"
 						height="1253.33"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -92,7 +86,6 @@ const LeftOrangeGradient = () => {
 				src={leftorange}
 				className="pointer-events-none absolute -top-1/2 left-0 -z-10 object-cover md:hidden"
 				alt="left orange gradient professionele website laten maken"
-				priority
 			/>
 		</>
 	);

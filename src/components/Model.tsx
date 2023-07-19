@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 export function Model(props: any) {
 	const { nodes } = useGLTF('/logo_animatie.gltf') as any;
-	const matcap = useTexture('/test.png');
+	const matcap = useTexture('/matcap.png');
 	const [scale, setScale] = useState(0.8);
 
 	const glassyMaterialProps = {
@@ -14,12 +14,18 @@ export function Model(props: any) {
 	};
 
 	useEffect(() => {
-		// get screen width
-		const width = window.innerWidth;
+		function updateScale() {
+			// get screen width
+			const width = window.innerWidth;
 
-		if (width < 768) {
-			setScale(0.55);
+			if (width < 768) {
+				setScale(0.55);
+			} else {
+				setScale(0.8);
+			}
 		}
+		updateScale();
+		document.addEventListener('resize', () => updateScale());
 	}, []);
 
 	return (

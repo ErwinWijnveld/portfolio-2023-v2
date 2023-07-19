@@ -8,7 +8,7 @@ const BackgroundGradient = (props: any) => {
 			xmlns="http://www.w3.org/2000/svg"
 			{...props}
 		>
-			<g clip-path="url(#clip0_302_2)">
+			<g clipPath="url(#clip0_302_2)">
 				<rect width="1440" height="900" fill="black" />
 				<g filter="url(#filter0_f_302_2)">
 					<path
@@ -71,9 +71,9 @@ const BackgroundGradient = (props: any) => {
 					width="1805.48"
 					height="1382.07"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -92,9 +92,9 @@ const BackgroundGradient = (props: any) => {
 					width="879"
 					height="1010"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -113,9 +113,9 @@ const BackgroundGradient = (props: any) => {
 					width="1192"
 					height="1397"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -134,9 +134,9 @@ const BackgroundGradient = (props: any) => {
 					width="1639"
 					height="1599"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -155,9 +155,9 @@ const BackgroundGradient = (props: any) => {
 					width="1453"
 					height="1416"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -176,9 +176,9 @@ const BackgroundGradient = (props: any) => {
 					width="1386.22"
 					height="1116.44"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -198,8 +198,8 @@ const BackgroundGradient = (props: any) => {
 					y2="360.192"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop offset="0.422952" stop-color="#8900C9" />
-					<stop offset="1" stop-color="#FFCCFF" />
+					<stop offset="0.422952" stopColor="#8900C9" />
+					<stop offset="1" stopColor="#FFCCFF" />
 				</linearGradient>
 				<clipPath id="clip0_302_2">
 					<rect width="1440" height="900" fill="white" />

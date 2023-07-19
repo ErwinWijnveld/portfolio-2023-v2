@@ -8,7 +8,6 @@ import ImageModal from './ImageModal';
 
 const HeroImages = (props: any) => {
 	const [openedImage, setOpenedImage] = useState<null | number>(null);
-	console.log(openedImage);
 
 	return (
 		<>
@@ -47,7 +46,6 @@ const HeroImages = (props: any) => {
 									>
 										<Image
 											placeholder="blur"
-											priority
 											src={props?.images[0]?.image}
 											alt={props?.images[0]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -62,7 +60,6 @@ const HeroImages = (props: any) => {
 									>
 										<Image
 											placeholder="blur"
-											priority
 											src={props?.images[1]?.image}
 											alt={props?.images[1]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -75,7 +72,6 @@ const HeroImages = (props: any) => {
 									>
 										<Image
 											placeholder="blur"
-											priority
 											src={props?.images[2]?.image}
 											alt={props?.images[2]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -90,7 +86,6 @@ const HeroImages = (props: any) => {
 									>
 										<Image
 											placeholder="blur"
-											priority
 											src={props?.images[3]?.image}
 											alt={props?.images[3]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"
@@ -103,7 +98,6 @@ const HeroImages = (props: any) => {
 									>
 										<Image
 											placeholder="blur"
-											priority
 											src={props?.images[4]?.image}
 											alt={props?.images[4]?.alt}
 											className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover object-top shadow-lg"

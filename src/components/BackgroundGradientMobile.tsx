@@ -8,7 +8,7 @@ const BackgroundGradientMobile = (props: any) => {
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
 		>
-			<g clip-path="url(#clip0_321_9)">
+			<g clipPath="url(#clip0_321_9)">
 				<rect width="390" height="844" fill="black" />
 				<g filter="url(#filter0_f_321_9)">
 					<path
@@ -75,9 +75,9 @@ const BackgroundGradientMobile = (props: any) => {
 					width="854.419"
 					height="1184.62"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -96,9 +96,9 @@ const BackgroundGradientMobile = (props: any) => {
 					width="706.984"
 					height="678.77"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -117,9 +117,9 @@ const BackgroundGradientMobile = (props: any) => {
 					width="923.08"
 					height="880.213"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -138,9 +138,9 @@ const BackgroundGradientMobile = (props: any) => {
 					width="1076.84"
 					height="1137.59"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -159,9 +159,9 @@ const BackgroundGradientMobile = (props: any) => {
 					width="941.807"
 					height="997.478"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -180,9 +180,9 @@ const BackgroundGradientMobile = (props: any) => {
 					width="775.973"
 					height="984.826"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -202,8 +202,8 @@ const BackgroundGradientMobile = (props: any) => {
 					y2="975.481"
 					gradientUnits="userSpaceOnUse"
 				>
-					<stop offset="0.422952" stop-color="#8900C9" />
-					<stop offset="1" stop-color="#FFCCFF" />
+					<stop offset="0.422952" stopColor="#8900C9" />
+					<stop offset="1" stopColor="#FFCCFF" />
 				</linearGradient>
 				<clipPath id="clip0_321_9">
 					<rect width="390" height="844" fill="white" />

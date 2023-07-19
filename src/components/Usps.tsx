@@ -101,12 +101,9 @@ export default function Usps() {
 						width="1501.79"
 						height="1246.78"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -125,12 +122,9 @@ export default function Usps() {
 						width="2294.01"
 						height="1665.89"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -149,12 +143,9 @@ export default function Usps() {
 						width="1029.62"
 						height="567.905"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -174,7 +165,6 @@ export default function Usps() {
 				className={
 					'absolute left-0 -z-20 block object-cover md:hidden '
 				}
-				priority
 			/>
 			<div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
 				<p className="inline bg-gradient-to-r from-[#00F3F9] via-[#FF29A8] to-[#FFBB00] bg-clip-text text-lg font-semibold text-transparent">

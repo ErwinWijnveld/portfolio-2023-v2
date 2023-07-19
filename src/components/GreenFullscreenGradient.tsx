@@ -16,7 +16,7 @@ const GreenFullscreenGradient = ({ className }: any) => {
 				}
 				preserveAspectRatio="xMidYMid slice"
 			>
-				<g clip-path="url(#clip0_12_23)">
+				<g clipPath="url(#clip0_12_23)">
 					<rect width="1440" height="900" fill="black" />
 					<g filter="url(#filter0_f_12_23)">
 						<ellipse
@@ -45,12 +45,9 @@ const GreenFullscreenGradient = ({ className }: any) => {
 						width="3482"
 						height="2606"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -69,12 +66,9 @@ const GreenFullscreenGradient = ({ className }: any) => {
 						width="1945"
 						height="1666"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -94,7 +88,6 @@ const GreenFullscreenGradient = ({ className }: any) => {
 			<Image
 				src={fullscreengreen}
 				alt="webdesign, website laten maken groene gradient professioneel"
-				priority
 				className={
 					'absolute inset-0 h-full w-full object-cover md:hidden ' +
 					className

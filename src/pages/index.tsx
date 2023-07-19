@@ -51,7 +51,6 @@ export default function Home() {
 						src={homegradient}
 						alt="webdesign gradient"
 						className="absolute right-0 top-0 z-10 h-full w-full object-cover md:hidden"
-						priority
 					/>
 				</HeroMockup>
 				<RotatingReadMore className="absolute -bottom-20 -right-20 z-30 md:bottom-0 md:hidden" />

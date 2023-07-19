@@ -79,7 +79,6 @@ const HeroMockup = ({ children, title, description, cta }: any) => {
 					className="absolute right-0 top-1/2 hidden w-1/2 origin-right -translate-y-1/2 scale-90 lg:block "
 					src={mockup}
 					alt="mockup"
-					priority
 					placeholder="blur"
 				/>
 			</div>

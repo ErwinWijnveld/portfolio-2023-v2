@@ -16,40 +16,30 @@ const Technologies = () => {
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
 						src={reactIcon}
 						alt="Reactjs icoon wit"
-						width={158}
-						height={48}
 						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
 						src={laravelIcon}
 						alt="Laravel icoon wit"
-						width={158}
-						height={48}
 						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
 						src={wordpressIcon}
 						alt="Wordpress icoon wit"
-						width={158}
-						height={48}
 						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
 						src={figmaIcon}
 						alt="Figma icoon wit"
-						width={158}
-						height={48}
 						placeholder="blur"
 					/>
 					<Image
 						className="col-span-2 col-start-2 max-h-12 w-full translate-y-2 object-contain sm:col-start-auto lg:col-span-1"
 						src={strapiIcon}
 						alt="Strapi icoon wit"
-						width={158}
-						height={48}
 						placeholder="blur"
 					/>
 				</div>

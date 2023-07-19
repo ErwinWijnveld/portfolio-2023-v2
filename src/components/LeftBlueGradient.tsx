@@ -16,7 +16,7 @@ const LeftBlueGradient = ({ className }: any) => {
 				}
 				preserveAspectRatio="xMidYMid meet"
 			>
-				<g clip-path="url(#clip0_306_35)">
+				<g clipPath="url(#clip0_306_35)">
 					<g filter="url(#filter0_f_306_35)">
 						<ellipse
 							cx="219.273"
@@ -66,12 +66,9 @@ const LeftBlueGradient = ({ className }: any) => {
 						width="1045.52"
 						height="1083.92"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -90,12 +87,9 @@ const LeftBlueGradient = ({ className }: any) => {
 						width="1186.13"
 						height="1329.82"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -114,12 +108,9 @@ const LeftBlueGradient = ({ className }: any) => {
 						width="1803.91"
 						height="1802.23"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -138,12 +129,9 @@ const LeftBlueGradient = ({ className }: any) => {
 						width="855.683"
 						height="599.129"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -167,7 +155,6 @@ const LeftBlueGradient = ({ className }: any) => {
 					'absolute left-0 -z-10 block scale-125 object-cover md:hidden ' +
 					className
 				}
-				priority
 			/>
 		</>
 	);

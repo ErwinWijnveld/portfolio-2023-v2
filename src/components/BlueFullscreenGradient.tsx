@@ -9,7 +9,7 @@ const BlueFullscreenGradient = ({ className }: any) => {
 			className={'absolute inset-0 h-full w-full ' + className}
 			preserveAspectRatio="xMidYMid slice"
 		>
-			<g clip-path="url(#clip0_19_88)">
+			<g clipPath="url(#clip0_19_88)">
 				<rect width="1440" height="900" fill="black" />
 				<g filter="url(#filter0_f_19_88)">
 					<ellipse
@@ -62,9 +62,9 @@ const BlueFullscreenGradient = ({ className }: any) => {
 					width="1474.95"
 					height="1221.96"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -83,9 +83,9 @@ const BlueFullscreenGradient = ({ className }: any) => {
 					width="1159"
 					height="1159"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -104,9 +104,9 @@ const BlueFullscreenGradient = ({ className }: any) => {
 					width="2124.68"
 					height="1527.88"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -125,9 +125,9 @@ const BlueFullscreenGradient = ({ className }: any) => {
 					width="3260"
 					height="1992.36"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -146,9 +146,9 @@ const BlueFullscreenGradient = ({ className }: any) => {
 					width="1373"
 					height="642"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"

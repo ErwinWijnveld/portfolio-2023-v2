@@ -1,6 +1,6 @@
 const RotatingReadMore = ({ className }: any) => {
 	return (
-		<a
+		<div
 			onClick={(e) => {
 				e.preventDefault();
 				window.scrollTo({
@@ -42,7 +42,7 @@ const RotatingReadMore = ({ className }: any) => {
 					</textPath>
 				</text>
 			</svg>
-		</a>
+		</div>
 	);
 };
 export default RotatingReadMore;

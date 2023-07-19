@@ -15,7 +15,7 @@ const FullScreenGradient = ({ className }: any) => {
 				}
 				preserveAspectRatio="xMidYMid slice"
 			>
-				<g clip-path="url(#clip0_11_9)">
+				<g clipPath="url(#clip0_11_9)">
 					<rect width="1440" height="900" fill="black" />
 					<g filter="url(#filter0_f_11_9)">
 						<ellipse
@@ -54,12 +54,9 @@ const FullScreenGradient = ({ className }: any) => {
 						width="1779.78"
 						height="1263.58"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -78,12 +75,9 @@ const FullScreenGradient = ({ className }: any) => {
 						width="1284.19"
 						height="1616.53"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -102,12 +96,9 @@ const FullScreenGradient = ({ className }: any) => {
 						width="1370.05"
 						height="1008.95"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -126,12 +117,9 @@ const FullScreenGradient = ({ className }: any) => {
 						width="1040.28"
 						height="740.033"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -151,8 +139,8 @@ const FullScreenGradient = ({ className }: any) => {
 						y2="887"
 						gradientUnits="userSpaceOnUse"
 					>
-						<stop stop-color="#FF0095" />
-						<stop offset="1" stop-color="#FFCDFF" />
+						<stop stopColor="#FF0095" />
+						<stop offset="1" stopColor="#FFCDFF" />
 					</linearGradient>
 					<clipPath id="clip0_11_9">
 						<rect width="1440" height="900" fill="white" />
@@ -162,7 +150,6 @@ const FullScreenGradient = ({ className }: any) => {
 			<Image
 				src={fullscreengradient}
 				alt="Gradient webdesign  professionele webontwikkeling"
-				priority
 				className={
 					'absolute inset-0 h-full w-full object-cover md:hidden ' +
 					className

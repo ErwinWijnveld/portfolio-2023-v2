@@ -16,7 +16,7 @@ const RightPinkGradient = ({ className }: any) => {
 				}
 				preserveAspectRatio="xMidYMid meet"
 			>
-				<g clip-path="url(#clip0_307_2)">
+				<g clipPath="url(#clip0_307_2)">
 					<g filter="url(#filter0_f_307_2)">
 						<path
 							d="M1890.09 948.495C2266.83 1102.66 2663.53 1425.36 2811.05 1427.49C3075.17 1431.3 2970.63 756.233 2670.63 540.66C2389.12 338.375 566.693 281.221 1053.33 698.712C1312.23 920.825 1569.48 817.29 1890.09 948.495Z"
@@ -38,12 +38,9 @@ const RightPinkGradient = ({ className }: any) => {
 						width="2490.97"
 						height="1541.8"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -62,12 +59,9 @@ const RightPinkGradient = ({ className }: any) => {
 						width="2590.97"
 						height="1641.8"
 						filterUnits="userSpaceOnUse"
-						color-interpolation-filters="sRGB"
+						colorInterpolationFilters="sRGB"
 					>
-						<feFlood
-							flood-opacity="0"
-							result="BackgroundImageFix"
-						/>
+						<feFlood floodOpacity="0" result="BackgroundImageFix" />
 						<feBlend
 							mode="normal"
 							in="SourceGraphic"
@@ -87,7 +81,6 @@ const RightPinkGradient = ({ className }: any) => {
 			<Image
 				src={rightpink}
 				alt="webdesign, website laten maken roze gradient professioneel"
-				priority
 				className={
 					'absolute right-0 -z-10 -translate-y-1/2 object-cover md:hidden ' +
 					className

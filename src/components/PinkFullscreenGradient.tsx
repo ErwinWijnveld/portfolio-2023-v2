@@ -9,7 +9,7 @@ const PinkFullscreenGradient = ({ className }: any) => {
 			className={'absolute inset-0 h-full w-full ' + className}
 			preserveAspectRatio="xMidYMid slice"
 		>
-			<g clip-path="url(#clip0_19_54)">
+			<g clipPath="url(#clip0_19_54)">
 				<rect width="1440" height="900" fill="black" />
 				<g filter="url(#filter0_f_19_54)">
 					<ellipse
@@ -81,9 +81,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="1808.13"
 					height="1325.95"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -102,9 +102,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="819.937"
 					height="1347.48"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -123,9 +123,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="1082"
 					height="1172"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -144,9 +144,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="1532"
 					height="1567"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -165,9 +165,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="859.21"
 					height="776.324"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -186,9 +186,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="2575.04"
 					height="1129.96"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"
@@ -207,9 +207,9 @@ const PinkFullscreenGradient = ({ className }: any) => {
 					width="1001"
 					height="1001"
 					filterUnits="userSpaceOnUse"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
-					<feFlood flood-opacity="0" result="BackgroundImageFix" />
+					<feFlood floodOpacity="0" result="BackgroundImageFix" />
 					<feBlend
 						mode="normal"
 						in="SourceGraphic"

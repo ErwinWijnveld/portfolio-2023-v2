@@ -29,7 +29,6 @@ const BlurCtaBanner = () => {
 						src={erwinguus}
 						alt="Erwin met een hond"
 						placeholder="blur"
-						priority
 					/>
 					<div className="w-full flex-auto">
 						<h2 className="text-primary-light text-3xl   tracking-tight sm:text-4xl">
