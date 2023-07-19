@@ -1,6 +1,5 @@
 import figmaIcon from '@/assets/images/figma.png';
 import laravelIcon from '@/assets/images/laravel.png';
-import nodejsIcon from '@/assets/images/nodejs.png';
 import reactIcon from '@/assets/images/react.png';
 import strapiIcon from '@/assets/images/strapi.png';
 import wordpressIcon from '@/assets/images/wordpress.png';

@@ -5,9 +5,7 @@ import Link from '@/components/presets/Link';
 import { ArrowRightCircleIcon } from '@heroicons/react/24/outline';
 import { gsap } from 'gsap';
 import Image from 'next/image';
-import { title } from 'process';
 import { useEffect, useRef } from 'react';
-import BackgroundGradient from './BackgroundGradient';
 import Button from './Button';
 import RotatingReadMore from './RotatingReadMore';
 

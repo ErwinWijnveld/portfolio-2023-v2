@@ -1,13 +1,7 @@
 import leftblue from '@/assets/images/gradients/leftblue.png';
 import {
-	ArrowPathIcon,
-	CloudArrowUpIcon,
-	CogIcon,
-	LockClosedIcon,
 	PaintBrushIcon,
 	PresentationChartLineIcon,
-	ServerIcon,
-	ShieldCheckIcon,
 	WrenchScrewdriverIcon,
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';

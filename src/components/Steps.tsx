@@ -1,13 +1,9 @@
 import prestaties from '@/assets/images/prestaties.png';
-import Link from '@/components/presets/Link';
 import {
-	CloudArrowUpIcon,
 	CodeBracketIcon,
-	LockClosedIcon,
 	PaintBrushIcon,
 	PhotoIcon,
 	RocketLaunchIcon,
-	ServerIcon,
 	UserGroupIcon,
 } from '@heroicons/react/20/solid';
 import Image from 'next/image';

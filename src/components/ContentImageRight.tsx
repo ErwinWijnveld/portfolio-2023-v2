@@ -1,6 +1,5 @@
 import mockup from '@/assets/images/mockup.png';
 import Link from '@/components/presets/Link';
-import { blogsMeta } from '@/data/blogs';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import LeftBlueGradient from './LeftBlueGradient';

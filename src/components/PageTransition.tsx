@@ -1,9 +1,9 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { Expo, gsap } from 'gsap';
+import { gsap } from 'gsap';
 import { usePathname } from 'next/navigation';
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import TransitionGradientElement from './TransitionGradientElement';
 
 const PageTransition = ({ children }: any) => {

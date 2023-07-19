@@ -1,7 +1,5 @@
 import {
 	BugAntIcon,
-	ChatBubbleLeftRightIcon,
-	ComputerDesktopIcon,
 	EnvelopeIcon,
 	PhoneIcon,
 } from '@heroicons/react/24/outline';

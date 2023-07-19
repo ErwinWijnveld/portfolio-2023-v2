@@ -1,4 +1,4 @@
-import { projecten, reversedProjecten } from '@/data/projecten';
+import { reversedProjecten } from '@/data/projecten';
 import LeftOrangeGradient from './LeftOrangeGradient';
 import ProjectCard from './ProjectCard';
 import RightPinkGradient from './RightPinkGradient';

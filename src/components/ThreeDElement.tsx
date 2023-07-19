@@ -1,7 +1,6 @@
-import { OrbitControls } from '@react-three/drei';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import { useLenis } from '@studio-freight/react-lenis';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Model } from './Model';
 
 const ThreeDElement = () => {

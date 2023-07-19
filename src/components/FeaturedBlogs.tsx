@@ -1,7 +1,4 @@
-import mockup from '@/assets/images/mockup.png';
-import Link from '@/components/presets/Link';
-import { blogs, blogsMeta } from '@/data/blogs';
-import Image from 'next/image';
+import { blogs } from '@/data/blogs';
 import BlogItem from './BlogItem';
 const posts = [
 	{

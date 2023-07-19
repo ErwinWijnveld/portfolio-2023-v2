@@ -10,7 +10,6 @@ import ImageTextBackdrop from '@/components/ImageTextBackdrop';
 import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
 import RotatingReadMore from '@/components/RotatingReadMore';
-import SplineThree from '@/components/SplineThree';
 import Technologies from '@/components/Technologies';
 import ThreeDElement from '@/components/ThreeDElement';
 import Usps from '@/components/Usps';
