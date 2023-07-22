@@ -19,6 +19,16 @@ const monumentextended = localFont({
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
+			<Script src="https://www.googletagmanager.com/gtag/js?id=G-WV5KV2Q3Z2" />
+			<Script id="google-analytics">
+				{`
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+		
+				gtag('config', 'G-WV5KV2Q3Z2');
+				`}
+			</Script>
 			<div className={poppins.variable + ' ' + monumentextended.variable}>
 				<PageTransitionGrid>
 					<Component {...pageProps} />
