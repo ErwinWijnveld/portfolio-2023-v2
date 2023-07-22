@@ -3,8 +3,10 @@ const RotatingReadMore = ({ className }: any) => {
 		<div
 			onClick={(e) => {
 				e.preventDefault();
+				let scrollheight =
+					window.innerHeight > 900 ? 900 : window.innerHeight;
 				window.scrollTo({
-					top: window.innerHeight,
+					top: scrollheight,
 					behavior: 'smooth',
 				});
 			}}

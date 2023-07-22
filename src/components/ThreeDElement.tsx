@@ -13,7 +13,7 @@ export default function ThreeDElement() {
 	return (
 		<div
 			id="model"
-			className="fixed inset-x-0 top-0 -z-10 h-screen max-h-[900px] w-screen"
+			className="fixed inset-x-0 top-0 -z-10 h-screen max-h-[1100px] w-screen"
 		>
 			<Canvas>
 				<ambientLight intensity={0.5} />

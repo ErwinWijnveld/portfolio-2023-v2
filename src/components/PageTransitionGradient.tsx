@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import TransitionGradientElement from './TransitionGradientElement';
 
-const PageTransition = ({ children }: any) => {
+const PageTransitionGradient = ({ children }: any) => {
 	const pathName = usePathname();
 	const [firstUpdate, setfirstUpdate] = useState(true);
 
@@ -52,7 +52,11 @@ const PageTransition = ({ children }: any) => {
 
 	return (
 		<>
-			<TransitionGradientElement className="fixed inset-y-0 z-[1000000] h-screen w-[1200vw] -translate-x-[1200vw] md:w-[300vw] md:-translate-x-[300vw]" />
+			<TransitionGradientElement
+				handleExitComplete={handleExitComplete}
+				transitionDuration={transitionDuration}
+				className="fixed inset-y-0 z-[1000000] h-screen w-[1200vw] -translate-x-[1200vw] md:w-[300vw] md:-translate-x-[300vw]"
+			/>
 			<AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
 				<motion.div
 					key={pathName}
@@ -72,4 +76,4 @@ const PageTransition = ({ children }: any) => {
 	);
 };
 
-export default PageTransition;
+export default PageTransitionGradient;

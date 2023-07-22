@@ -1,4 +1,5 @@
-import PageTransition from '@/components/PageTransition';
+import PageTransitionGradient from '@/components/PageTransitionGradient';
+import PageTransitionGrid from '@/components/PageTransitionGrid';
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
 import { Poppins } from 'next/font/google';
@@ -18,9 +19,9 @@ const monumentextended = localFont({
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<div className={poppins.variable + ' ' + monumentextended.variable}>
-			<PageTransition>
+			<PageTransitionGrid>
 				<Component {...pageProps} />
-			</PageTransition>
+			</PageTransitionGrid>
 		</div>
 	);
 }
