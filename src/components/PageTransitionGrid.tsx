@@ -74,11 +74,11 @@ const PageTransitionGrid = ({ children }: any) => {
 				ref={transElRef}
 				className="pointer-events-none fixed inset-y-0 z-[1000000] grid h-screen w-screen grid-cols-3 lg:grid-cols-5"
 			>
-				<div className="bar h-0 w-full bg-black" />
-				<div className="bar h-0 w-full bg-black" />
-				<div className="bar h-0 w-full bg-black" />
-				<div className="bar hidden h-0 w-full bg-black lg:block" />
-				<div className="bar hidden h-0 w-full bg-black lg:block" />
+				<div className="bar h-0 w-full bg-stone-950" />
+				<div className="bar h-0 w-full bg-stone-950" />
+				<div className="bar h-0 w-full bg-stone-950" />
+				<div className="bar hidden h-0 w-full bg-stone-950 lg:block" />
+				<div className="bar hidden h-0 w-full bg-stone-950 lg:block" />
 			</div>
 			<AnimatePresence mode="wait" onExitComplete={handleExitComplete}>
 				<motion.div
