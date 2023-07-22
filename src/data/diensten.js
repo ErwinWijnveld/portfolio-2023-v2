@@ -1,10 +1,12 @@
 import spotsquat from '@/assets/images/spotsquat.jpeg'
 import basheuting from '@/assets/images/webdesign/basheuting.png'
 import kbschuytgraaf from '@/assets/images/webdesign/kbschuytgraaf.png'
-import podcast from '@/assets/images/webdesign/podcast.png'
 import vayu from '@/assets/images/webdesign/vayu.png'
 import watch from '@/assets/images/webdesign/watch.png'
 
+import code from '@/assets/images/screens/Code.png'
+import figma from '@/assets/images/screens/Figma.png'
+import optimization from '@/assets/images/screens/optimization.png'
 import fitnesstracker from '@/assets/images/webontwikkeling/fitnesstracker.png'
 import rebase from '@/assets/images/webontwikkeling/rebase.png'
 import strivesports from '@/assets/images/webontwikkeling/strivesports.png'
@@ -21,7 +23,7 @@ export const diensten = [
             seo_description: "Op zoek naar een professionele freelance webdesigner in Arnhem, Elst, Nijmegen? Ik lever modern en innovatief webdesign dat jouw bedrijf laat opvallen. Neem contact op voor een op maat gemaakt webdesign oplossing."
         },
         description: 'In de moderne zakenwereld is een professionele en goed ontworpen website essentieel voor het succes van uw bedrijf. Het webdesign van uw site heeft invloed op de eerste indruk die potentiële klanten van uw merk krijgen. Het creëert een visuele identiteit die de kernwaarden en het professionalisme van uw bedrijf weerspiegelt.',
-        thumbnail: { image: spotsquat, alt: 'Afbeelding van een webdesign product' },
+        thumbnail: { image: figma, alt: 'Afbeelding van een webdesign product' },
         images: [
             {
                 image: watch, alt: 'Webdesign voor horlogemerk Watch'
@@ -82,8 +84,8 @@ export const diensten = [
             seo_title: "Professionele Website Laten Maken | Webontwikkelaar regio Arnhem, Nijmegen en Elst",
             seo_description: "Op zoek naar een webontwikkelaar in regio Arnhem, Nijmegen en Elst? Laat een professionele website maken die jouw online aanwezigheid versterkt. Ontdek mijn expertise in webdesign en webontwikkeling."
         },
-        description: 'Of je nu een eenvoudige informatieve website of een complexe e-commerce-oplossing nodig hebt, mijn expertise in verschillende webontwikkelingstechnologieën stelt me in staat om een website te maken die aan jouw behoeften voldoet',
-        thumbnail: { image: null, alt: 'Afbeelding van een webontwikkeling product' },
+        description: 'Of je nu een eenvoudige informatieve website of een complexe e-commerce-oplossing nodig hebt, mijn expertise in verschillende webontwikkelingstechnologieën stelt me in staat om een website te maken die aan jouw behoeften voldoet.',
+        thumbnail: { image: code, alt: 'Afbeelding van een webontwikkeling product' },
         images: [
             {
                 image: rebase, alt: 'Website gemaakt voor development bedrijf rebase'
@@ -144,7 +146,7 @@ export const diensten = [
             seo_description: "Verbeter jouw WordPress website met conversie optimalisatie en Google optimalisatie. Bereik hogere rankings en vergroot de zichtbaarheid in zoekmachines. Regio: Arnhem, Elst, Nijmegen en omstreken"
         },
         description: 'Met mijn optimalisatiedienst kun je jouw website verbeteren voor zoekmachines en conversies. Ik bied een breed scala aan optimalisatietechnieken om ervoor te zorgen dat jouw website optimaal presteert in de online wereld.',
-        thumbnail: { image: null, alt: 'Afbeelding van een optimalisatieproduct' },
+        thumbnail: { image: optimization, alt: 'Afbeelding van een optimalisatieproduct' },
         images: [
             {
                 image: warmonthaal, alt: 'Website gemaakt voor dagbesteding/dagbeleving Warm onthaal'
