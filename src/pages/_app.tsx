@@ -1,10 +1,9 @@
-import PageTransitionGradient from '@/components/PageTransitionGradient';
 import PageTransitionGrid from '@/components/PageTransitionGrid';
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
+import { Head } from 'next/document';
 import { Poppins } from 'next/font/google';
 import localFont from 'next/font/local';
-import Head from 'next/head';
 import Script from 'next/script';
 
 const poppins = Poppins({
