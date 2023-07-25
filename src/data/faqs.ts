@@ -208,6 +208,28 @@ export const faqs = [
 			'Is het mogelijk om de goedkope website in de toekomst uit te breiden of extra functies toe te voegen?',
 		answer: '<p>Ja, het is zeker mogelijk om uw goedkope website in de toekomst uit te breiden en extra functies toe te voegen. WordPress biedt de flexibiliteit om uw website op elk gewenst moment te upgraden en nieuwe functionaliteiten toe te voegen.</p> <p>Belangrijke informatie:</p> <ol> <li>Met behulp van plug-ins en aangepaste ontwikkeling kunnen nieuwe functies en modules aan uw website worden toegevoegd.</li> <li>Werk samen met uw webdesign- en ontwikkelingsbureau om uw toekomstige plannen en vereisten te bespreken, zodat zij uw website kunnen bouwen met de mogelijkheid om uit te breiden en te groeien.</li> <li>Houd er rekening mee dat bij het toevoegen van nieuwe functies mogelijk extra kosten en onderhoudsvereisten kunnen ontstaan, afhankelijk van de complexiteit van de gewenste wijzigingen.</li> </ol> <p>Neem contact met ons op voor meer informatie over het laten maken van een goedkope website met maatwerk mogelijkheden in WordPress. Wij staan klaar om uw vragen te beantwoorden en u te helpen bij het realiseren van een professionele website die voldoet aan uw specifieke behoeften en budget.</p>',
 	},
+	// website ontwikkelaar
+	{
+		id: 38,
+		question:
+			'Hoe lang doet een website ontwikkelaar over een gemiddelde website?',
+		answer: 'De tijd kan variëren afhankelijk van de omvang van het project. Een eenvoudige website kan binnen enkele weken worden ontwikkeld. Complexere projecten kunnen meer tijd in beslag nemen. Het is ook een kwestie van optimalisatie, wil je alle keyword artikelen gelijk live hebben?',
+	},
+	{
+		id: 39,
+		question: 'Bieden website ontwikkelaars ook onderhoudsdiensten aan?',
+		answer: 'Ja, de meeste website ontwikkelaars bieden onderhoudsdiensten aan. Dit kan variëren van het updaten van de website tot het toevoegen van nieuwe functies. Het is belangrijk om te weten wat de kosten zijn voor het onderhoud van uw website. Ik zelf biedt ook onderhoudsdiensten aan, neem contact op voor meer informatie.',
+	},
+	{
+		id: 40,
+		question: 'Kan ik mijn website later zelf bijwerken?',
+		answer: 'Ja, als je een gebruiksvriendelijk CMS hebt kan je zelf aanpassingen doorvoeren. Hiervoor is geen technische kennis vereist. Tegen uurtaief kan de website ontwikkelaar ook aanpassingen doorvoeren.',
+	},
+	{
+		id: 41,
+		question: 'Moet ik apart betalen voor hosting en domeinregistratie?',
+		answer: 'Vaak wel, dit kan inbegrepen zijn in de maandelijkse kosten. Het is belangrijk om te weten wat de kosten zijn voor hosting en domeinregistratie. Ik zelf biedt ook hosting en domeinregistratie aan, neem contact op voor meer informatie.',
+	},
 	{
 		question: '',
 		answer: '',
