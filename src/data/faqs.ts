@@ -230,9 +230,27 @@ export const faqs = [
 		question: 'Moet ik apart betalen voor hosting en domeinregistratie?',
 		answer: 'Vaak wel, dit kan inbegrepen zijn in de maandelijkse kosten. Het is belangrijk om te weten wat de kosten zijn voor hosting en domeinregistratie. Ik zelf biedt ook hosting en domeinregistratie aan, neem contact op voor meer informatie.',
 	},
+	// wordpress website laten maken
 	{
-		question: '',
-		answer: '',
+		id: 42,
+		question: 'Wordpress website laten maken prijs: wat kost het?',
+		answer: 'Het kostenplaatje voor het laten maken van een WordPress-website kan variëren afhankelijk van de complexiteit en functies die je wilt. Neem contact met mij op om een offerte op maat te ontvangen.',
+	},
+	{
+		id: 43,
+		question: 'Hoe lang duurt het om een WordPress-website te laten maken?',
+		answer: 'De tijdsduur om een WordPress-website te maken hangt af van de omvang van het project. Gemiddeld duurt het proces enkele weken tot een paar maanden, afhankelijk van de vereisten.',
+	},
+	{
+		id: 44,
+		question:
+			'Kan ik zelf de inhoud van mijn website beheren na de oplevering?',
+		answer: 'Ja, als onderdeel van mijn service stel ik jou in staat om eenvoudig de inhoud van je WordPress-website te beheren met behulp van het gebruiksvriendelijke CMS.',
+	},
+	{
+		id: 45,
+		question: 'Bied je ook ondersteuning en onderhoud na de lancering?',
+		answer: 'Ja, ik bied nazorg en ondersteuning na de lancering van jouw website. Ik sta klaar om eventuele problemen op te lossen en te zorgen dat de website blijft presteren.',
 	},
 	{
 		question: '',

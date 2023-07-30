@@ -37,6 +37,10 @@ const navigation = {
 			name: 'Website ontwikkelaar',
 			href: '/website-ontwikkelaar',
 		},
+		{
+			name: 'Wordpress website laten maken',
+			href: '/wordpress-website-laten-maken',
+		},
 	],
 	social: [
 		// {

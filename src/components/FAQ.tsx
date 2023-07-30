@@ -61,9 +61,9 @@ export default function FAQ({ ids }: { ids?: number[] }) {
 									<>
 										<dt>
 											<Disclosure.Button className="flex w-full items-start justify-between text-left text-white">
-												<span className="text-sm font-semibold leading-7 xs:text-base">
+												<h3 className="text-sm font-semibold leading-7 xs:text-base">
 													{faq.question}
-												</span>
+												</h3>
 												<span className="ml-6 flex h-7 items-center">
 													{open ? (
 														<MinusSmallIcon

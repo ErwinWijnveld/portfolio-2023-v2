@@ -9,12 +9,7 @@ import {
 	PlayCircleIcon,
 } from '@heroicons/react/20/solid';
 import {
-	ArrowPathIcon,
 	Bars3Icon,
-	ChartBarIcon,
-	ChartPieIcon,
-	CursorArrowRaysIcon,
-	FingerPrintIcon,
 	PaintBrushIcon,
 	PresentationChartLineIcon,
 	SquaresPlusIcon,
@@ -22,7 +17,7 @@ import {
 	XMarkIcon,
 } from '@heroicons/react/24/outline';
 import { useLenis } from '@studio-freight/react-lenis';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useRef, useState } from 'react';
 import BlurCtaBanner from './BlurCtaBanner';
 
 const products = [
