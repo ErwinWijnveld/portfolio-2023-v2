@@ -5,11 +5,11 @@ import Layout from '@/components/Layout';
 import Newsletter from '@/components/Newsletter';
 
 const page = {
-	title: 'Het Belang van Regelmatig Website Onderhoud',
+	title: 'Het Belang van Website Onderhoud',
 	date: '2023-08-01',
 	meta: {
 		seo_title:
-			'Het Belang van Regelmatig Website Onderhoud | Erwin Wijnveld',
+			'Website Onderhoud: Het Belang van Regelmatig onderhoud | Erwin Wijnveld',
 		seo_description:
 			'Website onderhoud is regelmatig nodig om ervoor te zorgen dat jouw website goed blijft functioneren. Voor veel bedrijven is het onderhouden van hun website een uitdaging, in dit artikel leg ik als Freelance Designer & Developer uit hoe jij je website kan onderhouden.',
 	},
