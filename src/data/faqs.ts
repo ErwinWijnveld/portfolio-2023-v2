@@ -252,6 +252,36 @@ export const faqs = [
 		question: 'Bied je ook ondersteuning en onderhoud na de lancering?',
 		answer: 'Ja, ik bied nazorg en ondersteuning na de lancering van jouw website. Ik sta klaar om eventuele problemen op te lossen en te zorgen dat de website blijft presteren.',
 	},
+	// website onderhoud
+
+	// 	Wat is website onderhoud? Website onderhoud omvat het regelmatig updaten, optimaliseren en beveiligen van een website. Dit zorgt er voor dat jouw website goed blijft functioneren en regelmatig doorontwikkeld wordt.
+
+	// Hoe vaak moet ik mijn website onderhouden? Mijn aanbeveling is om maandelijks updates te draaien en daarbij optimalisaties door te voeren. Dit zorgt er voor dat er minder snel problemen naar boven komen en je website concurrerend in de markt blijft.
+
+	// Wat zijn de voordelen van een CMS voor mijn website? Een CMS stelt je in staat om zelf eenvoudig content te beheren. Dit zorgt er voor dat je snel wijzigingen kunt aanbrengen zonder de hulp van een webontwikkelaar.
+
+	// Kan je mijn website onderhoud overnemen als deze elders is gehost? Ja, Ik kan het onderhoud van jouw website verzorgen, zelfs als deze elders is gehost of door een ander webdesignbureau is gemaakt.
+	{
+		id: 46,
+		question: 'Wat is website onderhoud?',
+		answer: 'Website onderhoud omvat het regelmatig updaten, optimaliseren en beveiligen van een website. Dit zorgt er voor dat jouw website goed blijft functioneren en regelmatig doorontwikkeld wordt.',
+	},
+	{
+		id: 47,
+		question: 'Hoe vaak moet ik mijn website onderhouden?',
+		answer: 'Mijn aanbeveling is om maandelijks updates te draaien en daarbij optimalisaties door te voeren. Dit zorgt er voor dat er minder snel problemen naar boven komen en je website concurrerend in de markt blijft.',
+	},
+	{
+		id: 48,
+		question: 'Wat zijn de voordelen van een CMS voor mijn website?',
+		answer: 'Een CMS stelt je in staat om zelf eenvoudig content te beheren. Dit zorgt er voor dat je snel wijzigingen kunt aanbrengen zonder de hulp van een webontwikkelaar.',
+	},
+	{
+		id: 49,
+		question:
+			'Kan je mijn website onderhoud overnemen als deze elders is gehost?',
+		answer: 'Ja, Ik kan het onderhoud van jouw website verzorgen, zelfs als deze elders is gehost of door een ander webdesignbureau is gemaakt.',
+	},
 	{
 		question: '',
 		answer: '',

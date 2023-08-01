@@ -16,6 +16,20 @@ const navigation = {
 	],
 	company: [
 		{
+			name: 'Website ontwikkelaar',
+			href: '/website-ontwikkelaar',
+		},
+		{
+			name: 'Website onderhoud',
+			href: '/website-onderhoud',
+		},
+		{
+			name: 'Wordpress website laten maken',
+			href: '/wordpress-website-laten-maken',
+		},
+	],
+	extraRelevantArticles: [
+		{
 			name: 'Website laten maken Arnhem',
 			href: '/website-laten-maken-arnhem',
 		},
@@ -30,16 +44,6 @@ const navigation = {
 		{
 			name: 'Goedkope website laten maken',
 			href: '/goedkope-website-laten-maken',
-		},
-	],
-	extraRelevantArticles: [
-		{
-			name: 'Website ontwikkelaar',
-			href: '/website-ontwikkelaar',
-		},
-		{
-			name: 'Wordpress website laten maken',
-			href: '/wordpress-website-laten-maken',
 		},
 	],
 	social: [
