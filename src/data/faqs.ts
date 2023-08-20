@@ -253,14 +253,6 @@ export const faqs = [
 		answer: 'Ja, ik bied nazorg en ondersteuning na de lancering van jouw website. Ik sta klaar om eventuele problemen op te lossen en te zorgen dat de website blijft presteren.',
 	},
 	// website onderhoud
-
-	// 	Wat is website onderhoud? Website onderhoud omvat het regelmatig updaten, optimaliseren en beveiligen van een website. Dit zorgt er voor dat jouw website goed blijft functioneren en regelmatig doorontwikkeld wordt.
-
-	// Hoe vaak moet ik mijn website onderhouden? Mijn aanbeveling is om maandelijks updates te draaien en daarbij optimalisaties door te voeren. Dit zorgt er voor dat er minder snel problemen naar boven komen en je website concurrerend in de markt blijft.
-
-	// Wat zijn de voordelen van een CMS voor mijn website? Een CMS stelt je in staat om zelf eenvoudig content te beheren. Dit zorgt er voor dat je snel wijzigingen kunt aanbrengen zonder de hulp van een webontwikkelaar.
-
-	// Kan je mijn website onderhoud overnemen als deze elders is gehost? Ja, Ik kan het onderhoud van jouw website verzorgen, zelfs als deze elders is gehost of door een ander webdesignbureau is gemaakt.
 	{
 		id: 46,
 		question: 'Wat is website onderhoud?',
@@ -281,6 +273,64 @@ export const faqs = [
 		question:
 			'Kan je mijn website onderhoud overnemen als deze elders is gehost?',
 		answer: 'Ja, Ik kan het onderhoud van jouw website verzorgen, zelfs als deze elders is gehost of door een ander webdesignbureau is gemaakt.',
+	},
+	// webshop laten maken
+
+	// 	### **1. Waarom is een professionele webshop laten maken belangrijk voor mijn bedrijf?**
+
+	// Een goede webshop is belangrijk voor je online aanwezigheid. Het kan veel invloed hebben op je zakelijk succes. Het dient als je virtuele etalage en kan klanten aantrekken, vertrouwen opwekken en conversies stimuleren.
+
+	// Een goede webshop is gebruiksvriendelijk. Een goede webshop is mooi. Een goede webshop is verbeterd voor zoekmachines. Dit zorgt ervoor dat je merk opvalt en bovenaan de zoekresultaten komt.
+
+	// ### **2. Wat is het voordeel van een op maat gemaakte webshop in vergelijking met standaard templates?**
+
+	// Een op maat gemaakte webshop biedt unieke voordelen die standaard templates niet kunnen evenaren. Met een op maat gemaakte webshop kun je een unieke online identiteit creëren. Deze identiteit past perfect bij jouw merk en doelgroep.
+
+	// Bovendien heb je geen beperkingen van standaard sjablonen. Hierdoor kun je je onderscheiden van de concurrentie en een memorabele indruk achterlaten bij je bezoekers.
+
+	// ### **3. Wat is het belang van SEO voor mijn webshop?**
+
+	// SEO is erg belangrijk voor je webshop omdat het bepaalt hoe goed je zichtbaar bent in Google. Een goede zichtbaarheid in Google is essentieel om meer verkeer naar je webshop te genereren. Met behulp van SEO-technieken kun je ervoor zorgen dat je webshop hoger in de zoekresultaten verschijnt. Dit betekent dat klanten je sneller kunnen vinden wanneer ze op zoek zijn naar jouw producten.
+
+	// ### **4. Hoe kan een Wordpress Woocommerce webshop mijn bedrijf helpen?**
+
+	// Een Wordpress Woocommerce webshop biedt talloze voordelen voor je bedrijf. Het platform is flexibel en schaalbaar. Wat betekent dat je gemakkelijk nieuwe functies kunt toevoegen naarmate je bedrijf groeit.
+
+	// Bovendien is het gebruiksvriendelijk, zowel voor jou als voor je klanten. Met een reeks aanpasbare opties kun je jouw webshop verbeteren voor conversies. Terwijl je tegelijkertijd een naadloze winkelervaring biedt aan je bezoekers.
+
+	// ### **5. Wat zijn enkele belangrijke stappen bij het laten maken van een webshop?**
+
+	// Het proces van het laten maken van een webshop omvat verschillende belangrijke stappen. Allereerst is er een kennismaking waarin je je visie, doelen en behoeften bespreekt. Daarna begint het ontwerp- en ontwikkeling proces. Hierbij wordt aandacht besteed aan zowel het visuele ontwerp als de technische functionaliteit van de webshop.
+
+	// Feedback speelt een cruciale rol om ervoor te zorgen dat het eindresultaat goed aansluit bij jouw wensen. Uiteindelijk leidt dit tot een professionele webshop die je merk vertegenwoordigt en online succes ondersteunt.
+	{
+		id: 50,
+		question:
+			'Waarom is een professionele webshop laten maken belangrijk voor mijn bedrijf?',
+		answer: 'Een goede webshop is belangrijk voor je online aanwezigheid. Het kan veel invloed hebben op je zakelijk succes. Het dient als je virtuele etalage en kan klanten aantrekken, vertrouwen opwekken en conversies stimuleren. Een goede webshop is gebruiksvriendelijk. Een goede webshop is mooi. Een goede webshop is verbeterd voor zoekmachines. Dit zorgt ervoor dat je merk opvalt en bovenaan de zoekresultaten komt.',
+	},
+	{
+		id: 51,
+		question:
+			'Wat is het voordeel van een op maat gemaakte webshop in vergelijking met standaard templates?',
+		answer: 'Een op maat gemaakte webshop biedt unieke voordelen die standaard templates niet kunnen evenaren. Met een op maat gemaakte webshop kun je een unieke online identiteit creëren. Deze identiteit past perfect bij jouw merk en doelgroep. Bovendien heb je geen beperkingen van standaard sjablonen. Hierdoor kun je je onderscheiden van de concurrentie en een memorabele indruk achterlaten bij je bezoekers.',
+	},
+	{
+		id: 52,
+		question: 'Wat is het belang van SEO voor mijn webshop?',
+		answer: 'SEO is erg belangrijk voor je webshop omdat het bepaalt hoe goed je zichtbaar bent in Google. Een goede zichtbaarheid in Google is essentieel om meer verkeer naar je webshop te genereren. Met behulp van SEO-technieken kun je ervoor zorgen dat je webshop hoger in de zoekresultaten verschijnt. Dit betekent dat klanten je sneller kunnen vinden wanneer ze op zoek zijn naar jouw producten.',
+	},
+	{
+		id: 53,
+		question:
+			'Hoe kan een Wordpress Woocommerce webshop mijn bedrijf helpen?',
+		answer: 'Een Wordpress Woocommerce webshop biedt talloze voordelen voor je bedrijf. Het platform is flexibel en schaalbaar. Wat betekent dat je gemakkelijk nieuwe functies kunt toevoegen naarmate je bedrijf groeit. Bovendien is het gebruiksvriendelijk, zowel voor jou als voor je klanten. Met een reeks aanpasbare opties kun je jouw webshop verbeteren voor conversies. Terwijl je tegelijkertijd een naadloze winkelervaring biedt aan je bezoekers.',
+	},
+	{
+		id: 54,
+		question:
+			'Wat zijn enkele belangrijke stappen bij het laten maken van een webshop?',
+		answer: 'Het proces van het laten maken van een webshop omvat verschillende belangrijke stappen. Allereerst is er een kennismaking waarin je je visie, doelen en behoeften bespreekt. Daarna begint het ontwerp- en ontwikkeling proces. Hierbij wordt aandacht besteed aan zowel het visuele ontwerp als de technische functionaliteit van de webshop. Feedback speelt een cruciale rol om ervoor te zorgen dat het eindresultaat goed aansluit bij jouw wensen. Uiteindelijk leidt dit tot een professionele webshop die je merk vertegenwoordigt en online succes ondersteunt.',
 	},
 	{
 		question: '',
