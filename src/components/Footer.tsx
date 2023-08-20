@@ -20,6 +20,10 @@ const navigation = {
 			href: '/website-ontwikkelaar',
 		},
 		{
+			name: 'Webshop laten maken',
+			href: '/webshop-laten-maken',
+		},
+		{
 			name: 'Website onderhoud',
 			href: '/website-onderhoud',
 		},
